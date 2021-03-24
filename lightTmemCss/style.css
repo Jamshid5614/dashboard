@@ -1,0 +1,468 @@
+
+/* .myCol{
+    background-color: #ffff !important;
+} */
+
+:root{
+    --shadowcha: 0 0 3px 1px rgb(211, 209, 209);
+}
+.grandMother{
+    background-color: #F7F9FC;
+}
+.grandMother__navbar{
+    background-color: #fff;
+    box-shadow: 0 0 2rem 0 rgb(41 48 66 / 10%);
+}
+.grandMother__navbar span.shadow{
+    min-width: 100%;
+    padding: 4px 0;
+}
+.grandMother__navbar div,p,span,a,button,i{
+    background-color: transparent;
+}
+.navbar-left-section{
+    background-color: transparent;
+}
+.navbar-right-section{
+    background-color: transparent;
+}
+.darkerTextColor{
+    color: #656B71 !important;
+}
+.myShadow{
+    box-shadow: 0 0 1px 0.5px rgb(238, 238, 238);
+}
+.grandMother .grandMother__navbar .navbar-right-section .dropdown3 li{
+    background-color: #fff !important;
+}
+.grandMother .grandMother__navbar .navbar-right-section .dropdown3 li:hover{
+    background-color: #F1F1F1F1 !important;
+}
+.grandMother .grandMother__navbar .navbar-right-section .dropdown4 ul a{
+    background-color: #fff !important;
+}
+.grandMother .grandMother__navbar .navbar-right-section .dropdown4 ul a:hover{
+    background-color: #F1F1F1F1 !important;
+}
+.grandMother__navbar .dropdown .dropdown-menu{
+    border-color: rgb(204, 202, 202) !important;
+}
+.grandMother .block .section1 .col-6.d-flex.justify-content-end .dropdown-menu li:hover{
+    background-color: #F1F1F1F1 !important;
+}
+.borderColor{
+    border-color: rgb(204, 202, 202) !important;
+}
+.section4 .mycol-md-12 .d-flex.py-4.justify-content-between li:hover{
+    background-color: #F1F1F1F1 !important;
+    color: rgb(133, 133, 133) !important;
+}
+.grandMother .block .section5 .row .calendar-col .calendar .calendar__header .dropdown-menu ul li:hover{
+    color: #000000 !important;
+}
+.calendarControl_button:hover{
+    background-color: #F1F1F1 !important;
+}
+.calendar__body .myModal button{
+    background-color: #fff !important;
+}
+.calendar__body .myModal button:hover{
+    background-color: #F1F1F1 !important;
+}
+.listItemHover:hover{
+    background-color: #F1F1F1 !important;
+}
+.section6 table thead tr th i{
+    color: rgb(230, 230, 230) !important;
+}
+.section6 table thead tr th i.active{
+    color: darkgrey !important;
+}
+.timeline-item::before{
+    background-color: #fff !important;
+}
+.timeline::before{
+    background-color: rgb(209, 207, 207) !important;
+}
+.navbar-controller{
+    color: #495057 !important;
+}
+.grandMother__navbar .navbar-left-section .search-input{
+    background-color: #fff !important;
+}
+.grandMother__navbar .navbar-left-section .search-input .input-group,input{
+    background-color: #F3F6FB !important;
+}
+.grandMother__navbar .navbar-left-section,.navbar-right-section{
+    background-color: #fff !important;
+}
+.grandMother__navbar{
+    position: relative;
+}
+.shadowN{
+    background-color: #fff !important;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 10px 1px rgb(199, 198, 198);
+}
+.grandMother__navbar .navbar-left-section .dropdown,.dropdown-menu{
+    background-color: #fff !important;
+}
+.grandMother__navbar .navbar-right-section .profile-dropdown{
+    background-color: #fff !important;
+}
+.grandMother .dropdown li,a,p,i,span{
+    color: rgb(95, 95, 95) !important;
+}
+.grandMother__navbar .navbar-right-section .dropdown2 .far.fa-comment span{
+    background-color: #3F80EA !important;
+    color: #fff !important;
+}
+.grandMother__navbar .navbar-right-section .dropdown4 a:first-child span{
+    color: grey !important;
+}
+
+.block .section1 .col-6.ps-4 p{
+    color: #333 !important;
+}
+.block .section1 .col-6.d-flex.justify-content-end .dropdown a{
+    background-color: #fff !important;
+    padding: 2px 9px;
+    box-shadow: var(--shadowcha);
+}
+.block .section1 .col-6.d-flex.justify-content-end button i{
+    color: #fff !important;
+}
+.block .section1 .col-6.d-flex.justify-content-end .dropdown a:first-child{
+    color: #333 !important;
+}
+.block .section2 .myCol:last-child{
+    background-color: #fff !important;
+
+}
+.block .section2 .myCol:first-child{
+    background-color: #E0EAFC !important;
+}
+.block .section2 .myCol{
+    box-shadow: var(--shadowcha);
+}
+.block .section2 .myCol:first-child p,span{
+    color: #5D94ED !important;
+}
+.block .section2 .myCol:last-child p:first-child{
+    color: #495057 !important;
+}
+.block .section2 .myCol:last-child div p{
+    background-color: #DFF4E6 !important;
+}
+.block .section2 .myCol:last-child span{
+    background-color: #E0EAFC !important;
+}
+.block .section2 .myCol:last-child span svg{
+    color: #4685EA !important;
+}
+
+.block .section3 .myCol:last-child{
+    background-color: #fff !important;
+    box-shadow: var(--shadowcha);
+}
+.block .section3 .myCol:last-child p:first-child{
+    color: #495057 !important;
+}
+.block .section3 .myCol:last-child div p{
+    background-color: #DFF4E6 !important;
+}
+.block .section3 .myCol:last-child span{
+    background-color: #E0EAFC !important;
+}
+.block .section3 .myCol:last-child span svg{
+    color: #4685EA !important;
+}
+.block .section3 .myCol:first-child{
+    background-color: #fff !important;
+    box-shadow: var(--shadowcha);
+}
+.block .section3 .myCol:first-child p:first-child{
+    color: #333 !important;
+}
+.block .section3 .myCol:first-child span{
+    background-color: #E0EAFC !important;
+}
+.block .section3 .myCol:first-child span svg{
+    color: #4685EA !important;
+}
+.block .section3 .myCol:first-child div p{
+    background-color: #F8E1E0 !important;
+    color: #D9534F !important;
+}
+.block .section4 .mycol-md-12{
+    background-color: #fff !important;
+    box-shadow: var(--shadowcha);
+}
+.block .section4 .mycol-md-12 p{
+    color: #333 !important;
+}
+.block .section4 .mycol-md-12 .dropdown i{
+    cursor: pointer;
+    color: #333 !important;
+}
+.block .section4 .mycol{
+    background-color: #fff !important;
+    box-shadow: var(--shadowcha);
+}
+.block .section4 .mycol .col__header p{
+    color: #333 !important;
+}
+.block .section5 .row div,button,li{
+    background-color: #fff !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body table tbody tr td{
+    color: grey !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body table tbody tr td:hover{
+    background-color: #F1F1F1 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body table tbody tr td.active:hover{
+    background-color: #3F80EA !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body table thead tr th{
+    color: rgb(110, 110, 110) !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__header .dropdown .dropdown-menu li:hover{
+    background-color: #F1F1F1 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col{
+    box-shadow: var(--shadowcha);
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body .controllers_for_calendar button:hover{
+    background-color: #F1F1F1 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body .controllers_for_calendar button{
+    color: rgb(110, 110, 110) !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body .controllers_for_calendar button i{
+    color: rgb(110, 110, 110) !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body .myModal .d-flex button{
+    color: rgb(110, 110, 110) !important;
+}
+body .container-fluid .grandMother .block .section5 .chart-col1{
+    box-shadow: var(--shadowcha);
+}
+body .container-fluid .grandMother .block .section5 .chart-col1 .chart__header .dropdown-menu li:hover{
+    background-color: #F1F1F1 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__header p{
+    color: #333 !important;
+} 
+body .container-fluid .grandMother .block .section5 .row .chart-col1 .chart .chart__header p{
+    color: #333 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .chart-col1 .chart .chart__body table th{
+    color: grey !important;
+}
+body .container-fluid .grandMother .block .section5 .row .chart-col1 .chart .chart__body table td{
+    color: #333 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .appointments-col .Appointments__header .dropdown-menu li:hover{
+    background-color: #F1F1F1 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .appointments-col .Appointments__header p{
+    color: #333 !important;
+}
+body .container-fluid .grandMother .block .section5 .row .appointments-col strong{
+    color: rgb(85, 85, 85);
+}
+body .container-fluid .grandMother .block .section5 .row .appointments-col{
+    box-shadow: var(--shadowcha);
+}
+.block .section6{
+    box-shadow: var(--shadowcha);
+    background-color: #fff !important;
+}
+.block .section6 table thead {
+    color: #535353 !important;
+}
+.block .section6 table tbody tr td{
+    color: grey !important;
+}
+.block .section6 table tbody tr:nth-child(1){
+    background-color: #F1F1F1 !important;
+}
+.block .section6 table tbody tr:nth-child(3){
+    background-color: #F1F1F1 !important;
+}
+.block .section6 table tbody tr:nth-child(5){
+    background-color: #F1F1F1 !important;
+}
+.block .section6 .section6__footer p{
+    color: grey !important;
+}
+.block .section6 .section6__footer ul a{
+    color: grey !important;
+}
+.block .section6 .section6__footer ul a.btn-primary{
+    color: #fff !important;
+}
+footer{
+    background-color: #fff !important;
+}
+footer .links a{
+    color: grey !important;
+}
+
+.pages-menu{
+    background-color: #fff !important;
+}
+
+.pages-menu div,p,span,h1,h2,h3,h4,h5{
+    background-color: #fff !important;
+}
+.container-fluid{
+    background-color: #fff !important;
+}
+.block .section1 .col-6:first-child p{
+    background-color: transparent !important;
+}
+.block .section1 .col-6:last-child button{
+    background-color: #3F80EA !important;
+    color: #fff !important;
+}
+.block .section2 p{
+    background-color: transparent !important;
+}
+.pages-menu{
+    box-shadow: var(--shadowcha);
+}
+.grandMother__navbar .dropdown-menu li:hover{
+    background-color: #F1F1F1 !important;
+}
+.grandMother__navbar .dropdown-menu li p{
+    background-color: transparent !important;
+}
+.grandMother__navbar .navbar-left-section .dropdown-menu li:hover{
+    background-color: transparent !important;
+}
+
+*{
+    border-color: darkgrey !important;
+}
+
+.block .section6 span.rounded {
+    background-color: red !important;
+}
+.openSettingControl{
+    background-color: #fff !important;
+    box-shadow: 0 0 20px 1px darkgrey !important;
+}
+.openSettingControl button{
+    background-color: #EDF2F5 !important;
+}
+.openSettingControl button:not(:last-child){
+    color: #1863DE !important;
+}
+.openSettingControl button:last-child{
+    color: #333 !important;
+}
+.pages-menu .h6{
+    color: grey !important;
+}
+.pages-menu .h6:hover{
+    color: #1863DE !important;
+}
+.pages-menu .h6.active{
+    color: #1863DE !important;
+}
+.navbarSettingSection{
+    background-color: #fff !important;
+}
+.navbarSettingSection__header p{
+    color: #333 !important;
+    background-color: #fff !important;
+}
+.navbarSettingSection__myAlert{
+    background-color: #D9E6FB !important;
+}
+.navbarSettingSection__myAlert p{
+    background-color: #D9E6FB !important;
+}
+.navbarSettingSection__myAlert span{
+    background-color: #D9E6FB !important;
+}
+.navbarSettingSection__myAlert p span{
+    color: #333 !important;
+}
+.navbarSettingSection__myAlert p{
+    color: #333 !important;
+}
+.navbarSettingSection .theme-setting .h6{
+    color: #333 !important;
+    background-color: #fff !important;
+}
+.navbarSettingSection .theme-setting .fs-6{
+    color: grey !important;
+    background-color: #fff !important;
+}
+
+.navbarSettingSection .d-flex.flex-wrap .my-light{
+    color: grey !important;
+    background-color: #fff !important;
+}
+.navbarSettingSection .sidebar-position p:first-child{
+    color: #333 !important;
+    background-color: #fff !important;
+}
+.navbarSettingSection .sidebar-position p.fs-6{
+    color: grey !important;
+    background-color: #fff !important;
+}    
+.navbarSettingSection .sidebar-position button{
+    background-color: #E2E8EE !important;
+    color: black !important;
+}
+.navbarSettingSection .sidebar-position button.active{
+    color: #fff !important;
+    background-color: #3F80EA !important;
+}
+.pages-menu .pages-menu__brand span{
+    color: #333 !important;
+}
+
+.pages-menu svg{
+    color: grey !important;
+}
+.pages-menu i{
+    color: grey !important;
+}
+.pages-menu .form-text{
+    color: rgb(97, 96, 96) !important;
+}
+.pages-menu .dashboard-some-memories{
+    background-color: #F7F7F7 !important;
+}
+.pages-menu .dashboard-some-memories p{
+    background-color: #F7F7F7 !important;
+}
+.pages-menu .dashboard-some-memories p:first-child{
+    color: #333 !important;
+}
+.pages-menu .dashboard-some-memories p:last-child{
+    color: grey !important;
+}
+.pages-menu .dashboard-some-memories button{
+    background-color: #3F80EA !important;
+    font-weight: 600;
+    border: none !important;
+}
+.pages-menu{
+    background-color: #fff !important;
+}
+
+.dropdown-menu{
+    border-color: darkgrey !important;
+}
+
+
+
+

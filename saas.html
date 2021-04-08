@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Dashboard</title>
+    <link rel="stylesheet" href="css/saas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="world-map-js/jquery.vmap.js"></script>
+    <script type="text/javascript" src="world-map-js/jquery.vmap.usa.js" charset="utf-8"></script>
+    <link rel="stylesheet" class="themes-css-file-cdn" href="">
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+
+        <div class="pages-menu myOverflow to-left">
+            <div class="pages-menu-default">
+                <div
+                    class="text-center py-4 d-flex align-items-center justify-content-center pages-menu__brand text-decoration-none">
+                    <svg class="me-2" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px"
+                        viewBox="0 0 20 20" xml:space="preserve">
+                        <path d="M19.4,4.1l-9-4C10.1,0,9.9,0,9.6,0.1l-9,4C0.2,4.2,0,4.6,0,5s0.2,0.8,0.6,0.9l9,4C9.7,10,9.9,10,10,10s0.3,0,0.4-0.1l9-4
+                      C19.8,5.8,20,5.4,20,5S19.8,4.2,19.4,4.1z"></path>
+                        <path d="M10,15c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
+                      c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,15,10.1,15,10,15z"></path>
+                        <path d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
+                      c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z"></path>
+                    </svg>
+                    <span class="m-0 text-white fs-4">AppStack</span>
+                </div>
+                <div class="page-menu__pages py-4">
+                    <span class="form-text ps-3">Pages</span>
+                    <div class="accordion w-100" id="general-accordion">
+                        <ul class="pages__list ps-3 p-0 my-3">
+                            <li class="list-item my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion1"
+                                        class="w-100 text-decoration-none text-light">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="me-3" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-sliders align-middle">
+                                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                                            <line x1="1" y1="14" x2="7" y2="14"></line>
+                                            <line x1="9" y1="8" x2="15" y2="8"></line>
+                                            <line x1="17" y1="16" x2="23" y2="16"></line>
+                                        </svg>
+                                        <span class="h6 active">Dashboards</span>
+                                        <span
+                                            class="badge bg-primary text-light float-end me-3 small py-1 px-2 navbar_noti">5</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse show ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion1">
+                                        <a href="index.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Default</a>
+                                        <a href="analytics.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Analytics</a>
+                                        <a href="saas.html"
+                                            class="d-block text-decoration-none accordion__item_active ps-3 my-3 small my-light hover-text-blue">SaaS</a>
+                                        <a href="social.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Social</a>
+                                        <a href="crypto.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Crypto</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item my-3 w-100">
+
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion2"
+                                        class="default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-layout align-middle">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                                        </svg>
+                                        <span class="h6 ms-2">Pages</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion2">
+                                        <a href="profile.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Profile</a>
+                                        <a href="setting.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Settings</a>
+                                        <a href="client.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Clients</a>
+                                        <a href="projects.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Projects</a>
+                                        <a href="invoice.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Invoice</a>
+                                        <a href="pricing.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Pricing</a>
+                                        <a href="tasks.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Tasks</a>
+                                        <a href="chat.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Chat</a>
+                                        <a href="blankPage.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Blank
+                                            Page</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion3"
+                                        class="default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-users align-middle">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Auth</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion3">
+                                        <a href="index.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Default</a>
+                                        <a href="analytics.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Analytics</a>
+                                        <a href="saas.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">SaaS</a>
+                                        <a href="social.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Social</a>
+                                        <a href="crypto.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Crypto</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse" href="#accordion4"
+                                        class="pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-book-open align-middle">
+                                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Documentation</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion4">
+                                        <a href="introduction.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Introduction</a>
+                                        <a href="gettingStarted.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Getting
+                                            Started</a>
+                                        <a href="customization.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Customization</a>
+                                        <a href="plugins.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Plugins</a>
+                                        <a href="changelog.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Changelog</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="form-text mt-5 ps-3">Tools & Components</p>
+                        <ul class="pages__list p-0 my-3 ps-3">
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100 w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse" href="#accordion5"
+                                        class="w-100 text-light pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-grid align-middle">
+                                            <rect x="3" y="3" width="7" height="7"></rect>
+                                            <rect x="14" y="3" width="7" height="7"></rect>
+                                            <rect x="14" y="14" width="7" height="7"></rect>
+                                            <rect x="3" y="14" width="7" height="7"></rect>
+                                        </svg>
+                                        <span class="h6 ms-2">UI Elements</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion5">
+                                        <a href="alerts.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Alerts</a>
+                                        <a href="buttons.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Buttons</a>
+                                        <a href="cards.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Cards</a>
+                                        <a href="carousel.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Carousel</a>
+                                        <a href="embedVideo.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Embed
+                                            Video</a>
+                                        <a href="general.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">General</a>
+                                        <a href="grid.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Grid</a>
+                                        <a href="modals.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Modals</a>
+                                        <a href="tabs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Tabs</a>
+                                        <a href="typography.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Typography</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion6"
+                                        class="w-100 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-heart align-middle">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            </path>
+                                        </svg>
+                                        <span class="h6 ms-2">Icons</span>
+                                        <span class="badge bg-primary p-1 float-end me-3 navbar_noti">1500+</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion6">
+                                        <a href="feather.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Feather</a>
+                                        <a href="fontAwesome.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Font
+                                            Awesome</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse" href="#accordion9"
+                                        class="pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check-square align-middle">
+                                            <polyline points="9 11 12 14 22 4"></polyline>
+                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Forms</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion9">
+                                        <a href="layouts.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Layouts</a>
+                                        <a href="basicInputs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Basic
+                                            Inputs</a>
+                                        <a href="inputGroups.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Input
+                                            Groups</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+
+                                <a data-bs-toggle="collapse" href="tables.html"
+                                    class="w-100 default-color-2 hover-text-color w-100 text-decoration-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-list align-middle">
+                                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                    </svg>
+                                    <span class="h6 ms-2">Tables</span>
+                                </a>
+
+
+                            </li>
+                        </ul>
+                        <p class="form-text mt-5 ps-3">Plugin & Addons</p>
+                        <ul class="pages__list p-0 my-3 ps-3">
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100 w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse"
+                                        href="#accordion10"
+                                        class="w-100 text-light pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check-square align-middle">
+                                            <polyline points="9 11 12 14 22 4"></polyline>
+                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Form Plugins</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion10">
+                                        <a href="advancedInputs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Advanced
+                                            Inputs</a>
+                                        <a href="editors.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Editors</a>
+                                        <a href="validation.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Validation</a>
+                                        <a href="wizard.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Wizard</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion11"
+                                        class="w-100 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-list align-middle">
+                                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                        </svg>
+                                        <span class="h6 ms-2">DataTables</span>
+                                        <span class="badge bg-primary p-1 float-end me-3 navbar_noti">1500+</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion11">
+                                        <a href="respnsiveTable.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Responsive
+                                            Table</a>
+                                        <a href="tablewithbuttons.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Table
+                                            with Buttons</a>
+                                        <a href="columnSearch.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Column
+                                            Search</a>
+                                        <a href="multiSelection.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Multi
+                                            Selection</a>
+                                        <a href="ajaxSourcedData.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Ajax
+                                            Sourced Data</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse"
+                                        href="#accordion12"
+                                        class="pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-pie-chart align-middle">
+                                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Charts</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion12">
+                                        <a href="chartjs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Chart.js</a>
+                                        <a href="apexCharts.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">ApexCharts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a href="calendar.html" style="box-shadow: none !important;"
+                                        data-bs-toggle="collapse" href="#accordion13"
+                                        class="pe-3 bg-transparent alonerlar p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar align-middle">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+
+                                        <span class="h6 ms-2">Calendar</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a href="notifications.html" style="box-shadow: none !important;"
+                                        class="pe-3 bg-transparent p-0 border-0 default-color-2 hover-text-color alonerlar w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-bell align-middle">
+                                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Notifications</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a href="#accordion14" style="box-shadow: none !important;"
+                                        data-bs-toggle="collapse"
+                                        class="pe-3 bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none accordion-button alonerlar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-share-2 align-middle">
+                                            <circle cx="18" cy="5" r="3"></circle>
+                                            <circle cx="6" cy="12" r="3"></circle>
+                                            <circle cx="18" cy="19" r="3"></circle>
+                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                        </svg>
+                                        <span class="h6 ms-2">Multi Level</span>
+                                    </a>
+                                    <div class="accordion-collapse collapse" id="accordion14">
+                                        <div class="accordion">
+                                            <a href="#accordion15" data-bs-toggle="collapse"
+                                                class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Two
+                                                Levels</a>
+                                            <div class="accordion-collapse collapse" id="accordion15">
+                                                <a href="#"
+                                                    class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Item
+                                                    1</a>
+                                                <a href="#"
+                                                    class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Item
+                                                    2</a>
+                                            </div>
+                                        </div>
+                                        <a href="vectorMaps.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Vector
+                                            Maps</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div
+                            class="d-flex justify-content-center w-100 align-items-center px-3 rounded overflow-hidden">
+                            <div class="dashboard-some-memories my-light p-3 lighter-then">
+                                <p class="m-0 mb-3 h6">Monthly Sales Report</p>
+                                <p class="h6">Your monthly sales report is ready for download!</p>
+                                <button class="btn btn-primary w-100 btn-sm mt-3">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="grandMother">
+
+            <div class="row grandMother__navbar to-left">
+                <div class="col-6 navbar-left-section">
+                    <div class="search-input">
+                        <i class="fas fa-bars ms-4 navbar-controller"></i>
+                        <div class="input-group rounded-3 overflow-hidden">
+                            <input type="text" class="form-control" placeholder="Search projects...">
+                            <button class="border-0 bg-transparent input-group-text"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown1">
+                        <a href="#dropdown1" class="text-decoration-none text-nowrap" data-bs-toggle="dropdown">Mega
+                            menu</a>
+                        <div class="dropdown-menu p-3" id="dropdown1">
+                            <div class="d-flex w-100">
+                                <ul class="p-0">
+                                    <p class="small text-muted">UI Elements</p>
+                                    <li>Alerts</li>
+                                    <li>Buttons</li>
+                                    <li>Cards</li>
+                                    <li>Carousel</li>
+                                    <li>General</li>
+                                    <li>Grid</li>
+                                    <li>Modals</li>
+                                    <li>Tabs</li>
+                                    <li>Typography</li>
+                                </ul>
+                                <ul class="p-0">
+                                    <p class="small text-muted">Forms</p>
+                                    <li>Layouts</li>
+                                    <li>Basic inputs</li>
+                                    <li>Input Groups</li>
+                                    <li>Advanced inputs</li>
+                                    <li>Editors</li>
+                                    <li>Validation</li>
+                                    <li>Wizard</li>
+                                </ul>
+                                <ul class="p-0">
+                                    <p class="small text-muted">Tables</p>
+                                    <li>Basic Tables</li>
+                                    <li>Responsive Table</li>
+                                    <li>Table with Buttons</li>
+                                    <li>Column Search</li>
+                                    <li>Muulti Selection</li>
+                                    <li>Ajax Sourced Data</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 navbar-right-section pe-5">
+                    <div class="dropdown dropdown2 dropstart">
+                        <i class="far fa-comment" data-bs-target="#dropdown2"
+                            data-bs-toggle="dropdown"><span>4</span></i>
+                        <div class="dropdown-menu" id="dropdown2">
+                            <ul>
+                                <p class="m-0 py-3">4 New Messages</p>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Ashley Briggs</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-5.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Nam pretium turpis et arcu. Duis arcu tortor.</p>
+                                                <p class="small p-2">15m ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Carl Jenkins</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-2.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Curabitur ligula sapien euismod vitae</p>
+                                                <p class="small p-2"> 2h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Ashley Briggs</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-4.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Pellentesque auctor neque nec urna.</p>
+                                                <p class="small p-2">4h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Bertha Martin</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-3.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Aenean tellus metus, bibendum sed, posuere ac,
+                                                    mattis non.</p>
+                                                <p class="small p-2">5h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <div class="d-flex allNotiLink justify-content-center align-items-center">
+                                    <a href="#" class="m-0 p-0 small">Show all messages</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown2 dropstart">
+                        <i class="fas fa-bell-slash" data-bs-target="dropdown3" data-bs-toggle="dropdown"></i>
+                        <div class="dropdown-menu" id="dropdown3">
+                            <ul>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Update completed</p>
+                                        <div class="d-flex">
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Restart server 12 to complete the update.</p>
+                                                <p class="small p-2">2h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Carl Jenkins</p>
+                                        <div class="d-flex">
+                                            <i class="far fa-bell" style="color: orange;"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Aliquam ex eros, imperdiet vulputate hendrerit et.
+                                                </p>
+                                                <p class="small p-2">6h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Login from 192.186.1.1</p>
+                                        <div class="d-flex">
+                                            <i class="fas fa-home text-primary fs-5" style="margin-right: 28px;"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-2">8h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Ashley Briggs</p>
+                                        <div class="d-flex">
+                                            <i class="fas fa-user-plus text-success" style="margin-right: 30px;"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Anna accepted your request</p>
+                                                <p class="small p-2">12h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <div class="d-flex allNotiLink justify-content-center align-items-center">
+                                    <a href="#" class="m-0 p-0 small">Show all messages</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown3 dropstart">
+                        <img data-bs-target="#dropdown4" data-bs-toggle="dropdown"
+                            src="https://appstack.bootlab.io/img/flags/us.png"
+                            style="width: 20px;height: 20px;cursor: pointer;" data-bs-target="dropdown4"
+                            class="dropdown-language-control rounded-circle" alt="">
+                        <div class="dropdown-menu" id="dropdown4">
+                            <ul>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/us.png" style="width: 30px;"
+                                            alt="">English</a></li>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/es.png" style="width: 30px;"
+                                            alt="">Spanish</a></li>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/de.png" style="width: 30px;"
+                                            alt="">German</a></li>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/nl.png" style="width: 30px;"
+                                            alt="">Dutch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown profile-dropdown dropdown4">
+                        <a href="#" class="text-decoration-none text-light" data-bs-target="#dropdown5"
+                            data-bs-toggle="dropdown"><img src="https://appstack.bootlab.io/img/avatars/avatar.jpg"
+                                alt=""> <span>Chris wood</span> <i class="ms-1 small fas fa-angle-down"></i> <i
+                                class="fas fa-cog"></i></a>
+                        <div class="dropdown-menu border-secondary" id="dropdown5">
+                            <ul>
+                                <a href="profile.html" class="hover-bg-list-color"><i
+                                        class="far fa-user"></i>Profile</a>
+                                <a href="#" class="hover-bg-list-color border-bottom border-secondary"><i
+                                        class="fas fa-chart-pie"></i>Analytics</a>
+
+                                <a href="setting.html" class="hover-bg-list-color">Settings & Privacy</a>
+                                <a href="setting.html" class="hover-bg-list-color">Help</a>
+                                <a href="setting.html" class="hover-bg-list-color">Sign out</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span class="shadowN w-100"></span>
+            </div>
+
+            <div class="row grandMother__navbar to-right">
+                <div class="col-6 navbar-right-section pe-5">
+                    <div class="dropdown dropdown2 dropstart">
+                        <i class="far fa-comment" data-bs-target="#dropdow2"
+                            data-bs-toggle="dropdown"><span>4</span></i>
+                        <div class="dropdown-menu" id="dropdown2">
+                            <ul>
+                                <p class="m-0 py-3">4 New Messages</p>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Ashley Briggs</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-5.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Nam pretium turpis et arcu. Duis arcu tortor.</p>
+                                                <p class="small p-2">15m ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Carl Jenkins</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-2.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Curabitur ligula sapien euismod vitae</p>
+                                                <p class="small p-2"> 2h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Ashley Briggs</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-4.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Pellentesque auctor neque nec urna.</p>
+                                                <p class="small p-2">4h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Bertha Martin</p>
+                                        <div class="d-flex">
+                                            <img src="https://appstack.bootlab.io/img/avatars/avatar-3.jpg" alt="">
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Aenean tellus metus, bibendum sed, posuere ac,
+                                                    mattis non.</p>
+                                                <p class="small p-2">5h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <div class="d-flex allNotiLink justify-content-center align-items-center">
+                                    <a href="#" class="m-0 p-0 small">Show all messages</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown2 dropstart">
+                        <i class="fas fa-bell-slash" data-bs-target="dropdown3" data-bs-toggle="dropdown"></i>
+                        <div class="dropdown-menu" id="dropdown3">
+                            <ul>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Update completed</p>
+                                        <div class="d-flex">
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Restart server 12 to complete the update.</p>
+                                                <p class="small p-2">2h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Carl Jenkins</p>
+                                        <div class="d-flex">
+                                            <i class="far fa-bell" style="color: orange;"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Aliquam ex eros, imperdiet vulputate hendrerit et.
+                                                </p>
+                                                <p class="small p-2">6h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Login from 192.186.1.1</p>
+                                        <div class="d-flex">
+                                            <i class="fas fa-home text-primary fs-5" style="margin-right: 28px;"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-2">8h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="hover-bg-list-color">
+                                    <a href="#" class="text-decoration-none">
+                                        <p class="fs-6">Ashley Briggs</p>
+                                        <div class="d-flex">
+                                            <i class="fas fa-user-plus text-success" style="margin-right: 30px;"></i>
+                                            <div class="d-block text-start">
+                                                <p class="small p-1">Anna accepted your request</p>
+                                                <p class="small p-2">12h ago</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <div class="d-flex allNotiLink justify-content-center align-items-center">
+                                    <a href="#" class="m-0 p-0 small">Show all messages</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown3 dropstart">
+                        <img data-bs-target="#dropdown4" data-bs-toggle="dropdown"
+                            src="https://appstack.bootlab.io/img/flags/us.png"
+                            style="width: 20px;height: 20px;cursor: pointer;" data-bs-target="dropdown4"
+                            class="dropdown-language-control rounded-circle" alt="">
+                        <div class="dropdown-menu" id="dropdown4">
+                            <ul>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/us.png" style="width: 30px;"
+                                            alt="">English</a></li>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/es.png" style="width: 30px;"
+                                            alt="">Spanish</a></li>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/de.png" style="width: 30px;"
+                                            alt="">German</a></li>
+                                <li class="hover-bg-list-color"><a href="#"><img
+                                            src="https://appstack.bootlab.io/img/flags/nl.png" style="width: 30px;"
+                                            alt="">Dutch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown profile-dropdown dropdown4">
+                        <a href="#" class="text-decoration-none text-light" data-bs-target="#dropdown5"
+                            data-bs-toggle="dropdown"><img src="https://appstack.bootlab.io/img/avatars/avatar.jpg"
+                                alt=""> <span>Chris wood</span> <i class="ms-1 small fas fa-angle-down"></i> <i
+                                class="fas fa-cog"></i></a>
+                        <div class="dropdown-menu border-secondary" id="dropdown5">
+                            <ul>
+                                <a href="profile.html" class="hover-bg-list-color"><i
+                                        class="far fa-user"></i>Profile</a>
+                                <a href="#" class="hover-bg-list-color border-bottom border-secondary"><i
+                                        class="fas fa-chart-pie"></i>Analytics</a>
+
+                                <a href="setting.html" class="hover-bg-list-color">Settings & Privacy</a>
+                                <a href="setting.html" class="hover-bg-list-color">Help</a>
+                                <a href="setting.html" class="hover-bg-list-color">Sign out</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 navbar-left-section">
+                    <div class="search-input">
+                        <i class="fas fa-bars ms-4 navbar-controller"></i>
+                        <div class="input-group rounded-3 overflow-hidden">
+                            <input type="text" class="form-control" placeholder="Search projects...">
+                            <button class="border-0 bg-transparent input-group-text"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown1 dropend">
+                        <a href="#dropdown1" class="text-decoration-none text-nowrap" data-bs-toggle="dropdown">Mega
+                            menu</a>
+                        <div class="dropdown-menu p-3" id="dropdown1">
+                            <div class="d-flex w-100">
+                                <ul class="p-0">
+                                    <p class="small text-muted">UI Elements</p>
+                                    <li>Alerts</li>
+                                    <li>Buttons</li>
+                                    <li>Cards</li>
+                                    <li>Carousel</li>
+                                    <li>General</li>
+                                    <li>Grid</li>
+                                    <li>Modals</li>
+                                    <li>Tabs</li>
+                                    <li>Typography</li>
+                                </ul>
+                                <ul class="p-0">
+                                    <p class="small text-muted">Forms</p>
+                                    <li>Layouts</li>
+                                    <li>Basic inputs</li>
+                                    <li>Input Groups</li>
+                                    <li>Advanced inputs</li>
+                                    <li>Editors</li>
+                                    <li>Validation</li>
+                                    <li>Wizard</li>
+                                </ul>
+                                <ul class="p-0">
+                                    <p class="small text-muted">Tables</p>
+                                    <li>Basic Tables</li>
+                                    <li>Responsive Table</li>
+                                    <li>Table with Buttons</li>
+                                    <li>Column Search</li>
+                                    <li>Muulti Selection</li>
+                                    <li>Ajax Sourced Data</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="shadowN w-100"></span>
+            </div>
+
+
+            <div class="block w-100">
+
+                <div class="row section1 pt-5 ps-3">
+                    <div class="col-6 ps-4">
+                        <p class="h5 text-light">Saas</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div class="dropdown">
+                            <a href="#dropdown6" data-bs-toggle="dropdown"
+                                class="d-flex align-items-center justify-content-between rounded my-light text-decoration-none">
+                                <i class="far fa-calendar me-2"></i>Today <i class="fas ms-2 fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu p-0" id="dropdown6">
+                                <p class="m-0 text-secondary small px-3 ">Setting</p>
+                                <ul class="m-0 p-0">
+                                    <li class="hover-bg-list-color px-3 text-secondary">Action</li>
+                                    <li class="hover-bg-list-color px-3 text-secondary">Another action</li>
+                                    <li class="hover-bg-list-color px-3 text-secondary border-bottom border-secondary">
+                                        Something else here</li>
+                                    <li class="hover-bg-list-color px-3 text-secondary">Separated link</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-sm ms-3"><i class="fas fa-filter"></i></button>
+                        <button class="btn btn-primary btn-sm ms-1 me-4"><i class="fas fa-sync"></i></button>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <p>Income</p>
+                            <p>$37.500</p>
+                            <div class="d-flex align-items-center">
+                                <span>6.25%</span>
+                                <p>Since last week</p>
+                            </div>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-bag align-middle">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p>Orders</p>
+                            <p>3.282</p>
+                            <div class="d-flex align-items-center">
+                                <span>-4.65%</span>
+                                <p>Since last week</p>
+                            </div>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-cart align-middle">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <p>Activity</p>
+                            <p>19.312</p>
+                            <div class="d-flex align-items-center">
+                                <span>8.35%</span>
+                                <p>Since last week</p>
+                            </div>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-activity align-middle">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 lighter">
+                            <div class="row">
+                                <div class="col">
+                                    <p>Welcome Back, Chris!</p>
+                                    <p>AppStack Dashboard</p>
+                                </div>
+                                <div class="col">
+                                    <img src="https://appstack.bootlab.io/img/illustrations/social.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section3 row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card-header">
+                            <p>Sales by State</p>
+                            <div class="dropdown dropstart">
+                                <i class="fas fa-ellipsis-h text-light" style="font-size: 10px;cursor: pointer;"
+                                    data-bs-target="#dropdown7" data-bs-toggle="dropdown"></i>
+                                <div class="dropdown-menu" id="dropdown7">
+                                    <ul class="ps-0 m-0">
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Action</li>
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Another action</li>
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Something else here</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="vmap"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card-header">
+                            <p>Sales / Revenue</p>
+                            <div class="dropdown dropstart">
+                                <i class="fas fa-ellipsis-h text-light" style="font-size: 10px;cursor: pointer;"
+                                    data-bs-target="#dropdown7" data-bs-toggle="dropdown"></i>
+                                <div class="dropdown-menu" id="dropdown7">
+                                    <ul class="ps-0 m-0">
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Action</li>
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Another action</li>
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Something else here</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="dashboard-bar" style="display: block; height: 300px;" height="300"
+                                class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card-header">
+                            <p>Order Activity</p>
+                            <div class="dropdown dropstart">
+                                <i class="fas fa-ellipsis-h text-light" style="font-size: 10px;cursor: pointer;"
+                                    data-bs-target="#dropdown7" data-bs-toggle="dropdown"></i>
+                                <div class="dropdown-menu" id="dropdown7">
+                                    <ul class="ps-0 m-0">
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Action</li>
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Another action</li>
+                                        <li
+                                            class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                            Something else here</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="timeline m-3">
+                                <li class="timeline-item">
+                                    <strong>Delivered</strong>
+                                    <p class="text-sm">2 hours ago</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <strong>Pick Up</strong>
+                                    <p class="text-sm">6 hours ago</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <strong>In Transit</strong>
+                                    <p class="text-sm">1 days ago</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <strong>Dispatched</strong>
+                                    <p class="text-sm">3 days ago</p>
+                                </li>
+                                <li class="timeline-item">
+                                    <strong>Order Received</strong>
+                                    <p class="text-sm">4 days ago</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section6 rounded overflow-hidden">
+
+                    <div class="section6__header  d-flex justify-content-between px-4 py-3 align-items-center">
+                        <p class="m-0 h6 text-light">Top Selling Products</p>
+                        <div class="dropdown dropstart">
+                            <i class="fas fa-ellipsis-h text-light" style="font-size: 10px;cursor: pointer;"
+                                data-bs-target="#dropdown7" data-bs-toggle="dropdown"></i>
+                            <div class="dropdown-menu" id="dropdown7">
+                                <ul class="ps-0 m-0">
+                                    <li
+                                        class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                        Action</li>
+                                    <li
+                                        class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                        Another action</li>
+                                    <li
+                                        class="py-1 hover-text-color small px-2 my-light text-nowrap hover-bg-list-color">
+                                        Something else here</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active tabe1">
+                            <table class="table table-borderless">
+                                <thead class="my-light border-bottom border-secondary">
+                                    <tr>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Name
+                                                <div class="arrows">
+                                                    <i class="fas active fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Tech
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                License
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Tickets
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Sales
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="my-light">
+                                    <tr class="border-bottom border-secondary" style="background-color: #343A4B;">
+                                        <td class="small ps-3">Abel Theme</td>
+                                        <td class="small">Angular</td>
+                                        <td class="small">Single license</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">80</span></td>
+                                        <td class="small">150</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary">
+                                        <td class="small ps-3">Project Fireball</td>
+                                        <td class="small">Vue</td>
+                                        <td class="small">Single license</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #D9534F !important;">60</span></td>
+                                        <td class="small">610</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary" style="background-color: #343A4B;">
+                                        <td class="small ps-3">Project Hades</td>
+                                        <td class="small">HTML</td>
+                                        <td class="small">Single license</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">50</span></td>
+                                        <td class="small">720</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary">
+                                        <td class="small ps-3">Project Nitro</td>
+                                        <td class="small">React</td>
+                                        <td class="small">Single license</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #CC8B37 !important;">30</span></td>
+                                        <td class="small">280</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary" style="background-color: #343A4B;">
+                                        <td class="small ps-3">Project Phoenix</td>
+                                        <td class="small">Vue</td>
+                                        <td class="small">Single license</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">10</span></td>
+                                        <td class="small">480</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small ps-3">Project Romeo</td>
+                                        <td class="small">React</td>
+                                        <td class="small">Single license</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">40</span></td>
+                                        <td class="small">280</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane tabe2">
+                            <table class="table table-borderless">
+                                <thead class="my-light border-bottom border-secondary">
+                                    <tr>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Name
+                                                <div class="arrows">
+                                                    <i class="fas active fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Start Date
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                End Date
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Status
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="d-flex m-0 p-0 w-100 justify-content-between">
+                                                Assignee
+                                                <div class="arrows">
+                                                    <i class="fas notActive fa-long-arrow-alt-up"></i>
+                                                    <i class="fas notActive fa-long-arrow-alt-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="my-light">
+                                    <tr class="border-bottom border-secondary" style="background-color: #343A4B;">
+                                        <td class="small ps-3">Project Apollo</td>
+                                        <td class="small">01/01/2018</td>
+                                        <td class="small">31/06/2018</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">Done</span></td>
+                                        <td class="small">Carl Jenkins</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary">
+                                        <td class="small ps-3">Project Fireball</td>
+                                        <td class="small">01/01/2018</td>
+                                        <td class="small">31/06/2018</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #D9534F !important;">Cancelled</span></td>
+                                        <td class="small">Bertha Martin</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary" style="background-color: #343A4B;">
+                                        <td class="small ps-3">Project Hades</td>
+                                        <td class="small">01/01/2018</td>
+                                        <td class="small">31/06/2018</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">Done</span></td>
+                                        <td class="small">Stacie Hall</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary">
+                                        <td class="small ps-3">Project Nitro</td>
+                                        <td class="small">01/01/2018</td>
+                                        <td class="small">31/06/2018</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #CC8B37 !important;">In progress</span></td>
+                                        <td class="small">Carl Jenkins</td>
+                                    </tr>
+                                    <tr class="border-bottom border-secondary" style="background-color: #343A4B;">
+                                        <td class="small ps-3">Project Phoenix</td>
+                                        <td class="small">01/01/2018</td>
+                                        <td class="small">31/06/2018</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">Done</span></td>
+                                        <td class="small">Bertha Martin</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="small ps-3">Project Romeo</td>
+                                        <td class="small">01/01/2018</td>
+                                        <td class="small">31/06/2018</td>
+                                        <td class="small"><span class="rounded text-white small px-1"
+                                                style="background-color: #4BBF73 !important;">Done</span></td>
+                                        <td class="small">Ashley Briggs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="section6__footer mx-3 d-flex justify-content-between">
+                        <p class="small my-light">Showing 1 to 6 of 9 entries</p>
+                        <ul class="d-flex justify-content-center align-items-center bg-transparent">
+
+                            <a href="#"
+                                class="btn shadow-none btn-sm tab-prev  rounded-0 my-light border-secondary">Previous</a>
+
+                            <a href="#"
+                                class="btn btn-primary btn-sm tab-prev my-light  rounded-0 border-secondary">1</a>
+
+                            <a href="#" class="btn btn-sm tab-next  my-light rounded-0 border-secondary">2</a>
+
+                            <a href="#"
+                                class="btn shadow-none btn-sm tab-next bg-transparent rounded-0 my-light border-secondary">Next</a>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <footer class="border-top border-secondary d-flex justify-content-between align-items-center">
+                <div class="links d-flex justify-content-between align-items-center">
+                    <a href="#" class="text-decoration-none text-secondary">Support</a>
+                    <a href="#" class="text-decoration-none text-secondary">Help Center</a>
+                    <a href="#" class="text-decoration-none text-secondary">Privacy</a>
+                    <a href="#" class="text-decoration-none text-secondary">Terms of Service</a>
+                </div>
+                <p class="text-secondary">© 2021 - <a href="#" class="text-decoration-none text-secondary">AppStack</a>
+                </p>
+            </footer>
+
+        </div>
+
+        <div class="pages-menu myOverflow to-right">
+            <div class="pages-menu-default">
+                <div
+                    class="text-center py-4 d-flex align-items-center justify-content-center pages-menu__brand text-decoration-none">
+                    <svg class="me-2" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px"
+                        viewBox="0 0 20 20" xml:space="preserve">
+                        <path d="M19.4,4.1l-9-4C10.1,0,9.9,0,9.6,0.1l-9,4C0.2,4.2,0,4.6,0,5s0.2,0.8,0.6,0.9l9,4C9.7,10,9.9,10,10,10s0.3,0,0.4-0.1l9-4
+                      C19.8,5.8,20,5.4,20,5S19.8,4.2,19.4,4.1z"></path>
+                        <path d="M10,15c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
+                      c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,15,10.1,15,10,15z"></path>
+                        <path d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
+                      c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z"></path>
+                    </svg>
+                    <span class="m-0 text-white fs-4">AppStack</span>
+                </div>
+                <div class="page-menu__pages py-4">
+                    <span class="form-text ps-3">Pages</span>
+                    <div class="accordion w-100" id="general-accordion">
+                        <ul class="pages__list ps-3 p-0 my-3">
+                            <li class="list-item my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion1"
+                                        class="w-100 text-decoration-none text-light">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="me-3" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-sliders align-middle">
+                                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                                            <line x1="1" y1="14" x2="7" y2="14"></line>
+                                            <line x1="9" y1="8" x2="15" y2="8"></line>
+                                            <line x1="17" y1="16" x2="23" y2="16"></line>
+                                        </svg>
+                                        <span class="h6 active">Dashboards</span>
+                                        <span
+                                            class="badge bg-primary text-light float-end me-3 small py-1 px-2 navbar_noti">5</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse show ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion1">
+                                        <a href="index.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Default</a>
+                                        <a href="analytics.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Analytics</a>
+                                        <a href="saas.html"
+                                            class="d-block text-decoration-none accordion__item_active ps-3 my-3 small my-light hover-text-blue">SaaS</a>
+                                        <a href="social.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Social</a>
+                                        <a href="crypto.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Crypto</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item my-3 w-100">
+
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion2"
+                                        class="default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-layout align-middle">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                                        </svg>
+                                        <span class="h6 ms-2">Pages</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion2">
+                                        <a href="profile.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Profile</a>
+                                        <a href="setting.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Settings</a>
+                                        <a href="client.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Clients</a>
+                                        <a href="projects.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Projects</a>
+                                        <a href="invoice.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Invoice</a>
+                                        <a href="pricing.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Pricing</a>
+                                        <a href="tasks.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Tasks</a>
+                                        <a href="chat.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Chat</a>
+                                        <a href="blankPage.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Blank
+                                            Page</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion3"
+                                        class="default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-users align-middle">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Auth</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion3">
+                                        <a href="index.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Default</a>
+                                        <a href="analytics.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Analytics</a>
+                                        <a href="saas.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">SaaS</a>
+                                        <a href="social.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Social</a>
+                                        <a href="crypto.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Crypto</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse" href="#accordion4"
+                                        class="pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-book-open align-middle">
+                                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Documentation</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion4">
+                                        <a href="introduction.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Introduction</a>
+                                        <a href="gettingStarted.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Getting
+                                            Started</a>
+                                        <a href="customization.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Customization</a>
+                                        <a href="plugins.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Plugins</a>
+                                        <a href="changelog.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Changelog</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="form-text mt-5 ps-3">Tools & Components</p>
+                        <ul class="pages__list p-0 my-3 ps-3">
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100 w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse" href="#accordion5"
+                                        class="w-100 text-light pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-grid align-middle">
+                                            <rect x="3" y="3" width="7" height="7"></rect>
+                                            <rect x="14" y="3" width="7" height="7"></rect>
+                                            <rect x="14" y="14" width="7" height="7"></rect>
+                                            <rect x="3" y="14" width="7" height="7"></rect>
+                                        </svg>
+                                        <span class="h6 ms-2">UI Elements</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion5">
+                                        <a href="alerts.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Alerts</a>
+                                        <a href="buttons.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Buttons</a>
+                                        <a href="cards.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Cards</a>
+                                        <a href="carousel.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Carousel</a>
+                                        <a href="embedVideo.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Embed
+                                            Video</a>
+                                        <a href="general.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">General</a>
+                                        <a href="grid.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Grid</a>
+                                        <a href="modals.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Modals</a>
+                                        <a href="tabs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Tabs</a>
+                                        <a href="typography.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Typography</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion6"
+                                        class="w-100 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-heart align-middle">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            </path>
+                                        </svg>
+                                        <span class="h6 ms-2">Icons</span>
+                                        <span class="badge bg-primary p-1 float-end me-3 navbar_noti">1500+</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion6">
+                                        <a href="feather.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Feather</a>
+                                        <a href="fontAwesome.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Font
+                                            Awesome</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse" href="#accordion9"
+                                        class="pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check-square align-middle">
+                                            <polyline points="9 11 12 14 22 4"></polyline>
+                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Forms</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion9">
+                                        <a href="layouts.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Layouts</a>
+                                        <a href="basicInputs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Basic
+                                            Inputs</a>
+                                        <a href="inputGroups.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Input
+                                            Groups</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+
+                                <a data-bs-toggle="collapse" href="tables.html"
+                                    class="w-100 default-color-2 hover-text-color w-100 text-decoration-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-list align-middle">
+                                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                    </svg>
+                                    <span class="h6 ms-2">Tables</span>
+                                </a>
+
+
+                            </li>
+                        </ul>
+                        <p class="form-text mt-5 ps-3">Plugin & Addons</p>
+                        <ul class="pages__list p-0 my-3 ps-3">
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100 w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse"
+                                        href="#accordion10"
+                                        class="w-100 text-light pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-check-square align-middle">
+                                            <polyline points="9 11 12 14 22 4"></polyline>
+                                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Form Plugins</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion10">
+                                        <a href="advancedInputs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Advanced
+                                            Inputs</a>
+                                        <a href="editors.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Editors</a>
+                                        <a href="validation.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Validation</a>
+                                        <a href="wizard.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Wizard</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+
+                                <div class="accordion w-100">
+                                    <a data-bs-toggle="collapse" href="#accordion11"
+                                        class="w-100 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-list align-middle">
+                                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                        </svg>
+                                        <span class="h6 ms-2">DataTables</span>
+                                        <span class="badge bg-primary p-1 float-end me-3 navbar_noti">1500+</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion11">
+                                        <a href="respnsiveTable.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Responsive
+                                            Table</a>
+                                        <a href="tablewithbuttons.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Table
+                                            with Buttons</a>
+                                        <a href="columnSearch.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Column
+                                            Search</a>
+                                        <a href="multiSelection.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Multi
+                                            Selection</a>
+                                        <a href="ajaxSourcedData.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Ajax
+                                            Sourced Data</a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a style="box-shadow: none !important;" data-bs-toggle="collapse"
+                                        href="#accordion12"
+                                        class="pe-3 accordion-button bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-pie-chart align-middle">
+                                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Charts</span>
+                                    </a>
+                                    <div class="border-0 accordion-collapse collapse ps-4"
+                                        data-bs-parent="#general-accordion" id="accordion12">
+                                        <a href="chartjs.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Chart.js</a>
+                                        <a href="apexCharts.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">ApexCharts</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a href="calendar.html" style="box-shadow: none !important;"
+                                        data-bs-toggle="collapse" href="#accordion13"
+                                        class="pe-3 bg-transparent alonerlar p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-calendar align-middle">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+
+                                        <span class="h6 ms-2">Calendar</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a href="notifications.html" style="box-shadow: none !important;"
+                                        class="pe-3 bg-transparent p-0 border-0 default-color-2 hover-text-color alonerlar w-100 text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-bell align-middle">
+                                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                        </svg>
+                                        <span class="h6 ms-2">Notifications</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="list-item d-flex align-items-center my-3 w-100">
+                                <div class="accordion w-100">
+                                    <a href="#accordion14" style="box-shadow: none !important;"
+                                        data-bs-toggle="collapse"
+                                        class="pe-3 bg-transparent p-0 border-0 default-color-2 hover-text-color w-100 text-decoration-none accordion-button alonerlar">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-share-2 align-middle">
+                                            <circle cx="18" cy="5" r="3"></circle>
+                                            <circle cx="6" cy="12" r="3"></circle>
+                                            <circle cx="18" cy="19" r="3"></circle>
+                                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                        </svg>
+                                        <span class="h6 ms-2">Multi Level</span>
+                                    </a>
+                                    <div class="accordion-collapse collapse" id="accordion14">
+                                        <div class="accordion">
+                                            <a href="#accordion15" data-bs-toggle="collapse"
+                                                class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Two
+                                                Levels</a>
+                                            <div class="accordion-collapse collapse" id="accordion15">
+                                                <a href="#"
+                                                    class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Item
+                                                    1</a>
+                                                <a href="#"
+                                                    class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Item
+                                                    2</a>
+                                            </div>
+                                        </div>
+                                        <a href="vectorMaps.html"
+                                            class="d-block text-decoration-none ps-3 my-3 small my-light hover-text-blue">Vector
+                                            Maps</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div
+                            class="d-flex justify-content-center w-100 align-items-center px-3 rounded overflow-hidden">
+                            <div class="dashboard-some-memories my-light p-3 lighter-then">
+                                <p class="m-0 mb-3 h6">Monthly Sales Report</p>
+                                <p class="h6">Your monthly sales report is ready for download!</p>
+                                <button class="btn btn-primary w-100 btn-sm mt-3">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="openSettingControl rounded p-2">
+        <button class="openRightSetting">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-sliders align-middle">
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+            BUILDER
+        </button>
+        <button class="errorSound"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-book-open align-middle">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg></button>
+    </div>
+
+    <div class="navbarSettingSection">
+        <div class="navbarSettingSection__header">
+            <p class="h5 text-light m-0">Theme Builder</p>
+            <button class="btn-close btn-close-white"></button>
+        </div>
+        <div class="navbarSettingSection__myAlert">
+            <p class="m-0 h6 my-light">
+                <span class="fw-bold text-light">Hey there! </span>Set your own customized style below. Choose the ones
+                that best fits your needs.
+            </p>
+        </div>
+        <div class="theme-setting px-4">
+            <p class="m-0 my-light h6">Color scheme</p>
+            <p class="m-0 my-light fs-6">The perfect color mode for your app.</p>
+            <div class="d-flex flex-wrap">
+                <div class="text-center">
+                    <button class="" id="defaultTheme">
+                        <div class="rounded-circle darkWhite"></div>
+                    </button>
+                    <p class="my-light">Default</p>
+                </div>
+                <div class="text-center">
+                    <button class="" id="blueWhiteTheme">
+                        <div class="rounded-circle blueWhite"></div>
+                    </button>
+                    <p class="my-light">Colored</p>
+                </div>
+                <div class="text-center active">
+                    <button class="selected" id="darkTheme">
+                        <div class="rounded-circle dark"></div>
+                    </button>
+                    <p class="my-light">Dark</p>
+                </div>
+                <div class="text-center">
+                    <button class="" id="lightTheme">
+                        <div class="rounded-circle light" style="background-color: #F2F4F6 !important;"></div>
+                    </button>
+                    <p class="my-light">Light</p>
+                </div>
+
+            </div>
+            <hr class="bg-secondary">
+        </div>
+        <div class="sidebar-position px-4">
+            <p class="m-0 my-light h6">Sidebar position</p>
+            <p class="m-0 my-light fs-6">Toggle the position of the sidebar.</p>
+            <div class="d-flex">
+                <button class="sidebarLeft active">Left</button>
+                <button class="sidebarRight">Right</button>
+            </div>
+            <hr class="bg-secondary my-4">
+        </div>
+
+    </div>
+
+    <div class="bg-curtain"></div>
+
+    <script src="controll-theme-setting.js"></script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Bar chart
+            new Chart(document.getElementById("dashboard-bar"), {
+                type: "bar",
+                data: {
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                    datasets: [{
+                        label: "Last year",
+                        backgroundColor: '#3B82EC',
+                        data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+                        barPercentage: .325,
+                        categoryPercentage: .5
+                    }, {
+                        label: "This year",
+                        backgroundColor: '#1659C7',
+                        // borderColor: window.theme["primary-light"],
+                        // hoverBackgroundColor: window.theme["primary-light"],
+                        // hoverBorderColor: window.theme["primary-light"],
+                        data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+                        barPercentage: .325,
+                        categoryPercentage: .5
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    cornerRadius: 15,
+                    legend: {
+                        display: false
+                    },
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                display: false
+                            },
+                            stacked: false,
+                            ticks: {
+                                stepSize: 20
+                            },
+                            stacked: true,
+                        }],
+                        xAxes: [{
+                            stacked: false,
+                            gridLines: {
+                                color: "transparent"
+                            },
+                            stacked: true,
+                        }]
+                    }
+                }
+            });
+        });
+
+        
+        // AmCharts.makeChart("chartdiv", {
+        //     "type": "map",
+        //     "theme": "dark",
+        //     "dataProvider" : {
+        //     "mapURL": "https://www.amcharts.com/lib/3/maps/svg/uzbekistanHigh.svg",
+        //     "getAreasFromMap": true
+        //     },
+        //     "areasSettings": {
+        //     "autoZoom": true,
+        //     "selectedColor": "#CC0000"
+        //     }
+        // });
+    
+    </script>
+
+    <!-- maps -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#vmap').vectorMap({
+            map: 'usa_en',
+            enableZoom: true,
+            showTooltip: true
+            });
+        });
+    </script>
+
+    <script src="javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

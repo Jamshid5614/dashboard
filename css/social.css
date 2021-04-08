@@ -96,7 +96,8 @@ body {
     body .container-fluid .grandMother {
       max-height: 100vh;
       overflow-x: hidden;
-      max-width: 100% !important; }
+      max-width: 100% !important;
+      width: 100%; }
       body .container-fluid .grandMother ul {
         list-style: none; }
       body .container-fluid .grandMother .row {
@@ -490,396 +491,221 @@ body {
                   margin-right: 6px; }
       body .container-fluid .grandMother .block {
         width: 100%; }
-        body .container-fluid .grandMother .block .section1 .col-md-6:not(:last-child) {
-          padding-left: 33px; }
-        body .container-fluid .grandMother .block .section1 .col-md-6 {
+        body .container-fluid .grandMother .block .dropdown i {
+          color: #D4D6D9; }
+        body .container-fluid .grandMother .block .section {
+          padding: 40px;
           display: flex;
-          align-items: center; }
-          body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown a {
-            background-color: #293042 !important;
-            padding: 5px 10px;
-            border: 1px solid #3f3e3e !important; }
-          body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown .dropdown-menu {
-            background-color: #333B52 !important;
-            min-width: 200px; }
-            body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown .dropdown-menu p {
-              margin: 10px 0 !important; }
-            body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown .dropdown-menu ul p {
-              color: darkgrey !important; }
-              body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown .dropdown-menu ul p:hover {
-                color: #C3C7CD !important; }
-            body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown .dropdown-menu ul li {
-              cursor: pointer;
-              padding: 10px 0;
-              color: darkgrey !important; }
-              body .container-fluid .grandMother .block .section1 .col-md-6 .dropdown .dropdown-menu ul li:hover {
-                color: #C3C7CD !important; }
-        body .container-fluid .grandMother .block .section1 #dropdown6 p {
-          padding: 6px 0; }
-        body .container-fluid .grandMother .block .section1 #dropdown6 ul li {
-          cursor: pointer;
-          padding: 6px 0; }
-        body .container-fluid .grandMother .block .section2, body .container-fluid .grandMother .block .section3 {
-          justify-content: center;
-          width: 100%;
-          display: block; }
-          body .container-fluid .grandMother .block .section2 .myCol, body .container-fluid .grandMother .block .section3 .myCol {
-            width: 100%; }
-        body .container-fluid .grandMother .block .section4 {
-          padding: 25px 35px !important;
-          display: flex;
-          flex-wrap: nowrap; }
-          body .container-fluid .grandMother .block .section4 .mycol-md-12 {
-            width: 68%;
-            background-color: #293042;
-            overflow-y: auto; }
-            body .container-fluid .grandMother .block .section4 .mycol-md-12 .d-flex.py-4.justify-content-between {
-              padding: 0;
-              padding-top: 15px !important;
-              padding-bottom: 15px !important; }
-            body .container-fluid .grandMother .block .section4 .mycol-md-12 .canvas-holder {
-              height: 200px; }
-              body .container-fluid .grandMother .block .section4 .mycol-md-12 .canvas-holder canvas {
-                width: 100% !important;
-                height: 100%; }
-          body .container-fluid .grandMother .block .section4 .mycol {
-            overflow-y: auto;
-            background-color: #293042;
-            margin-left: 25px;
-            width: 30%;
-            padding-bottom: 20px !important; }
-            body .container-fluid .grandMother .block .section4 .mycol .col__header {
-              margin-bottom: 20px; }
-            body .container-fluid .grandMother .block .section4 .mycol ul {
-              padding: 0;
-              margin-bottom: 5px; }
-              body .container-fluid .grandMother .block .section4 .mycol ul li {
-                display: flex;
-                align-items: flex-start;
-                padding: 10px 0;
-                border-bottom: 1px solid #575656; }
-                body .container-fluid .grandMother .block .section4 .mycol ul li img {
-                  border-radius: 50%;
-                  width: 40px;
-                  height: 40px;
-                  margin-right: 10px; }
-                body .container-fluid .grandMother .block .section4 .mycol ul li p {
-                  color: #979595;
-                  font-size: 14px; }
-                  body .container-fluid .grandMother .block .section4 .mycol ul li p span {
-                    color: #c4c0c0;
-                    font-size: 15px; }
-                body .container-fluid .grandMother .block .section4 .mycol ul li .text {
-                  margin: 0 !important; }
-              body .container-fluid .grandMother .block .section4 .mycol ul p {
-                font-size: 90% !important;
-                letter-spacing: 0; }
-              body .container-fluid .grandMother .block .section4 .mycol ul span {
-                font-size: 80% !important; }
-        body .container-fluid .grandMother .block .section5 .row .calendar-col {
-          background-color: #293042;
-          min-width: 300px;
-          margin-top: 20px; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .dark {
-            --bg-body: var(--dark-body);
-            --bg-main: var(--dark-main);
-            --bg-second: var(--dark-second);
-            --color-hover: var(--dark-hover);
-            --color-txt: var(--dark-text); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .light {
-            --bg-body: var(--light-body);
-            --bg-main: var(--light-main);
-            --bg-second: var(--light-second);
-            --color-hover: var(--light-hover);
-            --color-txt: var(--light-text); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col * {
-            padding: 0;
+          justify-content: space-between; }
+          body .container-fluid .grandMother .block .section .myCol:first-child {
+            width: 65%;
+            border-radius: 5px;
             margin: 0;
-            box-sizing: border-box; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col html,
-          body .container-fluid .grandMother .block .section5 .row .calendar-col body {
-            height: 100vh;
-            display: grid;
-            place-items: center;
-            font-family: var(--font-family);
-            background-color: var(--bg-body); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar {
-            height: 100%;
-            width: 100%;
+            display: block;
             background-color: #293042;
-            border-radius: 0;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-            /* transform: scale(1.25); */ }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .light .calendar {
-            box-shadow: var(--shadow); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 25px;
-            font-weight: 600;
-            color: var(--color-txt);
-            padding: 10px; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-body {
-            padding: 10px; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-week-day {
-            height: 50px;
-            display: flex;
-            justify-content: space-between;
-            font-weight: 600; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-week-day div {
-            color: var(--bg-second);
-            width: 14.2857142857% !important; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            color: var(--color-txt); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div {
-            width: 14%;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
-            position: relative;
-            cursor: pointer;
-            border-radius: 3px;
-            transition: .3s; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div.active {
-            background-color: #3F80EA !important;
-            color: #fff !important; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div.today {
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #3F80EA; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span {
-            position: relative; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div.calendar-day-hover:hover {
-            background-color: #545968; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(1),
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(3) {
-            width: 2px;
-            height: 0;
-            background-color: var(--color-txt); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(1),
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(3) {
-            height: 100%; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(1) {
-            bottom: 0;
-            left: 0; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(3) {
-            top: 0;
-            right: 0; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(2),
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(4) {
-            width: 0;
-            height: 2px;
-            background-color: var(--color-txt); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(2),
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(4) {
-            width: 100%; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(2) {
-            top: 0;
-            left: 0; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div span:nth-child(4) {
-            bottom: 0;
-            right: 0; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(2) {
-            transition-delay: 0.2s; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(3) {
-            transition-delay: 0.4s; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div:hover span:nth-child(4) {
-            transition-delay: 0.6s; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-days div.curr-date span {
-            display: none; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-picker {
-            padding: 5px 10px;
-            border-radius: 3px;
-            cursor: pointer; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-picker:hover {
-            background-color: #545968; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .year-picker {
-            display: flex;
-            align-items: center; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .year-change {
-            height: 40px;
-            width: 40px;
-            border-radius: 3px;
-            display: grid;
-            place-items: center;
-            margin: 0 10px;
-            cursor: pointer; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .year-change:hover {
-            background-color: #545968; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar-footer {
-            padding: 10px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .toggle {
-            display: flex; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .toggle span {
-            margin-right: 10px;
-            color: var(--color-txt); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .dark-mode-switch {
-            position: relative;
-            width: 48px;
-            height: 25px;
-            border-radius: 3px;
-            background-color: #293042;
-            cursor: pointer; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .dark-mode-switch-ident {
-            width: 21px;
-            height: 21px;
-            border-radius: 50%;
-            background-color: #293042;
-            transition: left 0.2s ease-in-out; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .dark .dark-mode-switch .dark-mode-switch-ident {
-            top: 2px;
-            left: calc(2px + 50%); }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-list {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: #293042;
-            padding: 20px;
-            grid-template-columns: repeat(3, auto);
-            gap: 5px;
-            display: grid;
-            transform: scale(1.5);
-            visibility: hidden;
-            pointer-events: none; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-list.show {
-            transform: scale(1);
-            visibility: visible;
-            pointer-events: visible;
-            transition: all 0.2s ease-in-out; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-list > div {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-list > div > div {
-            width: 100%;
-            padding: 0;
-            border-radius: 10px;
-            text-align: center;
-            cursor: pointer;
-            color: var(--color-txt);
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-          body .container-fluid .grandMother .block .section5 .row .calendar-col .month-list > div > div:hover {
-            background-color: #545968; }
-@keyframes to-top {
-  0% {
-    transform: translateY(100%);
-    opacity: 0; }
-  100% {
-    transform: translateY(0);
-    opacity: 1; } }
-        body .container-fluid .grandMother .block .section5 .row .chart-col1 {
-          background-color: #293042;
-          margin-top: 20px; }
-          body .container-fluid .grandMother .block .section5 .row .chart-col1 .chart .chart__body table tbody tr td span {
-            padding: 0 10px;
-            max-height: 7px;
-            margin-right: 5px; }
-        body .container-fluid .grandMother .block .section5 .row .appointments-col {
-          background-color: #293042;
-          margin-top: 20px; }
-          body .container-fluid .grandMother .block .section5 .row .appointments-col .appointments__body {
-            position: relative; }
-            body .container-fluid .grandMother .block .section5 .row .appointments-col .appointments__body .timeline {
-              position: relative; }
-              body .container-fluid .grandMother .block .section5 .row .appointments-col .appointments__body .timeline .timeline-item:before {
-                content: " ";
-                display: inline-block;
-                position: absolute;
-                z-index: 1;
-                margin-right: 10px;
-                background: #293042;
-                background-image: initial;
-                background-position-x: initial;
-                background-position-y: initial;
-                background-size: initial;
-                background-repeat: initial;
-                background-attachment: initial;
-                background-origin: initial;
-                background-clip: initial;
-                background-color: #293042;
-                border-radius: 50%;
-                border: 3px solid #3f80ea;
-                border-top-color: #3f80ea;
-                border-top-style: solid;
-                border-top-width: 3px;
-                border-right-color: #3f80ea;
-                border-right-style: solid;
-                border-right-width: 3px;
-                border-bottom-color: #3f80ea;
-                border-bottom-style: solid;
-                border-bottom-width: 3px;
-                border-left-color: #3f80ea;
-                border-left-style: solid;
-                border-left-width: 3px;
-                border-image-source: initial;
-                border-image-slice: initial;
-                border-image-width: initial;
-                border-image-outset: initial;
-                border-image-repeat: initial;
-                left: 0;
-                width: 20px;
-                height: 20px; }
-              body .container-fluid .grandMother .block .section5 .row .appointments-col .appointments__body .timeline:before {
-                content: " ";
-                display: inline-block;
-                position: absolute;
-                z-index: 1;
-                background: #696e7b;
-                background-image: initial;
-                background-position-x: initial;
-                background-position-y: initial;
-                background-size: initial;
-                background-repeat: initial;
-                background-attachment: initial;
-                background-origin: initial;
-                background-clip: initial;
-                background-color: #696e7b;
-                left: 9px;
-                width: 2px;
-                height: 100%;
-                box-sizing: border-box;
-                margin-right: 10px; }
-        body .container-fluid .grandMother .block .section6 {
-          background-color: #293042;
-          margin: 20px;
-          overflow: hidden; }
-          body .container-fluid .grandMother .block .section6 .tab-content .tab-pane {
-            overflow-y: hidden;
-            overflow-x: auto; }
-            body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table {
-              min-width: 700px; }
-              body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table thead tr th {
-                cursor: pointer; }
-                body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table thead tr th .arrows {
-                  width: 15px;
+            padding: 20px; }
+            body .container-fluid .grandMother .block .section .myCol:first-child .user-1 {
+              display: flex;
+              width: 100%;
+              border-bottom: 1px solid #3F4555; }
+              body .container-fluid .grandMother .block .section .myCol:first-child .user-1 img.rounded-circle {
+                margin-right: 20px;
+                height: 60px;
+                width: 60px; }
+              body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block {
+                width: 90%; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .user-header {
                   display: flex;
-                  justify-content: center;
+                  justify-content: space-between;
                   align-items: center; }
-                  body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table thead tr th .arrows i {
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .user-header p:first-child {
+                    color: #BFC1C6;
+                    font-weight: 600;
+                    font-size: 15px; }
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .user-header p:last-child {
+                    color: #A9ACB3;
+                    font-size: 13px; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .user-message {
+                  color: #A9ACB3;
+                  font-size: 15px;
+                  font-weight: 500; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .images {
+                  justify-content: space-between; }
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .images img {
+                    width: 49%; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block div.span {
+                  color: #A9ACB3;
+                  font-size: 13px;
+                  margin: 5px 0; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block a.btn.rounded-0.btn-danger.d-flex.align-items-center {
+                  max-width: 65px;
+                  font-size: 13px;
+                  justify-content: center;
+                  padding: 3px 0;
+                  background-color: #D9534F !important;
+                  border-color: #D9534F !important; }
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block a.btn.rounded-0.btn-danger.d-flex.align-items-center:hover {
+                    background-color: #D23430 !important;
+                    border-color: #D23430 !important; }
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block a.btn.rounded-0.btn-danger.d-flex.align-items-center svg {
+                    height: 14px;
+                    margin-right: 3px; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .stacieHall {
+                  display: flex;
+                  padding: 20px 0; }
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .stacieHall a {
+                    margin-right: 10px; }
+                    body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .stacieHall a img {
+                      border-radius: 50%;
+                      height: 40px;
+                      width: 40px;
+                      cursor: pointer; }
+                  body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .stacieHall p {
+                    color: #A9ACB3;
+                    font-size: 14px; }
+                    body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .stacieHall p span {
+                      font-weight: 600;
+                      color: #BFC1C6; }
+                body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block img.user-sended-img {
+                  width: 100%; }
+            body .container-fluid .grandMother .block .section .myCol:first-child .user-1:last-child {
+              border-bottom: none !important; }
+          body .container-fluid .grandMother .block .section .myCol:last-child {
+            width: 33%;
+            padding: 0; }
+            body .container-fluid .grandMother .block .section .myCol:last-child .admin {
+              width: 100%;
+              border-radius: 5px;
+              background-color: #293042;
+              padding: 20px;
+              text-align: center; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .admin .admin-img {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                margin: 0 auto; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .admin .admin-name {
+                font-size: 17px;
+                color: #D4D6D9;
+                font-weight: 600;
+                margin-top: 5px;
+                margin-bottom: 2px; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .admin .admin-job {
+                color: #A7AAB1;
+                font-size: 15px; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .admin .buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 0; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .admin .buttons a {
+                  border-radius: 2px !important;
+                  background-color: #3F80EA !important;
+                  color: #fff;
+                  font-size: 13px;
+                  margin: 0 2px;
+                  padding: 3px 6px !important;
+                  font-weight: 600; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .admin .buttons a svg {
+                    color: #fff;
+                    height: 14px;
+                    margin: 0 !important; }
+            body .container-fluid .grandMother .block .section .myCol:last-child .followers {
+              width: 100%;
+              border-radius: 5px;
+              background-color: #293042;
+              margin-top: 15px; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .followers .other-users__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .followers .other-users__header p {
+                  margin: 0;
+                  color: #D4D6D9;
+                  font-weight: 600; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .followers .card-body__item {
+                display: flex;
+                padding: 10px 0;
+                border-bottom: 1px solid #3F4555; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .followers .card-body__item img {
+                  height: 60px;
+                  width: 60px;
+                  border-radius: 50%;
+                  margin-right: 10px; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .followers .card-body__item .d-block p {
+                  color: #BAC1C6; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .followers .card-body__item .d-block a.unfollow-btn {
+                  color: #3F80EA;
+                  border: 1px solid #3F80EA;
+                  text-decoration: none;
+                  font-size: 14px;
+                  padding: 2px 4px;
+                  transition: .3s; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .followers .card-body__item .d-block a.unfollow-btn:hover {
+                    background-color: #3F80EA;
+                    color: #fff; }
+            body .container-fluid .grandMother .block .section .myCol:last-child .activities {
+              background-color: #293042;
+              border-radius: 5px;
+              margin-top: 20px; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .activities__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .activities__header p {
+                  color: #D4D6BC;
+                  font-weight: 600; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body hr {
+                background-color: rgba(255, 255, 255, 0.2); }
+              body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item {
+                display: flex;
+                padding: 10px 0; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item img {
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                  margin-right: 15px; }
+                body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex {
+                  width: 90%;
+                  justify-content: space-between; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex span {
+                    color: #A9ACB3;
+                    font-size: 13px; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block span {
+                    font-size: 13px; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block p {
+                    color: #A9ACB3;
+                    font-size: 15px; }
+                    body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block p span {
+                      font-size: 15px;
+                      font-weight: 600;
+                      color: #BFC1C6; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block .posted-message {
                     font-size: 13px;
-                    color: #5a5959; }
-                  body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table thead tr th .arrows i.notActive {
-                    font-size: 13px;
-                    color: #5a5959; }
-                  body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table thead tr th .arrows i.active {
-                    color: darkgrey; }
-              body .container-fluid .grandMother .block .section6 .tab-content .tab-pane table thead tr th:first-child {
-                padding-left: 20px; }
+                    color: #A9ACB3;
+                    border: 1px solid #A9ACB3;
+                    padding: 6px;
+                    margin-top: 10px; }
+                  body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block .d-flex {
+                    justify-content: flex-start; }
+                    body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block .d-flex img {
+                      width: 55px;
+                      margin: 4px 0;
+                      border-radius: 0; }
+                    body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body__item .d-flex .d-block .d-flex img:first-child {
+                      margin-right: 5px; }
+              body .container-fluid .grandMother .block .section .myCol:last-child .activities .card-body a {
+                font-size: 15px; }
+          @media (max-width: 868px) {
+            body .container-fluid .grandMother .block .section {
+              width: 100%;
+              display: block; }
+            body .container-fluid .grandMother .block .section .myCol {
+              min-width: 100%; }
+            body .container-fluid .grandMother .block .section .myCol:last-child {
+              margin-top: 30px; } }
       body .container-fluid .grandMother footer {
         padding: 20px 20px; }
         body .container-fluid .grandMother footer a {
@@ -1063,78 +889,6 @@ body {
       transform: none !important; }
     body .container-fluid .grandMother .grandMother__navbar .navbar-right-section .dropdown2 .dropdown-menu.show {
       transform: translateY(60px) !important; }
-    body .container-fluid .grandMother .block .section1 .ps-4 p {
-      display: none; }
-    body .container-fluid .grandMother .block .section4 {
-      display: block !important;
-      padding-top: 20px; }
-      body .container-fluid .grandMother .block .section4 div {
-        width: 100% !important;
-        margin: 20px 0 !important;
-        max-height: 800px !important; }
-      body .container-fluid .grandMother .block .section4 .mycol-md-12 {
-        min-height: 200px;
-        background-color: #293042; }
-        body .container-fluid .grandMother .block .section4 .mycol-md-12 canvas {
-          width: 100% !important; }
-        body .container-fluid .grandMother .block .section4 .mycol-md-12 .d-flex {
-          display: flex !important;
-          justify-content: space-between;
-          align-items: center; }
-          body .container-fluid .grandMother .block .section4 .mycol-md-12 .d-flex .dropdown {
-            width: 20px !important; }
-      body .container-fluid .grandMother .block .section4 .mycol {
-        background-color: #293042;
-        margin-left: 25px;
-        width: 30%;
-        padding: 0 30px !important;
-        padding-bottom: 20px !important; }
-        body .container-fluid .grandMother .block .section4 .mycol .col__header {
-          margin-bottom: 20px; }
-        body .container-fluid .grandMother .block .section4 .mycol ul {
-          padding: 0;
-          margin-bottom: 5px; }
-          body .container-fluid .grandMother .block .section4 .mycol ul li {
-            display: flex;
-            align-items: flex-start;
-            padding: 10px 0;
-            border-bottom: 1px solid #575656;
-            position: relative; }
-            body .container-fluid .grandMother .block .section4 .mycol ul li .float-end {
-              display: none; }
-            body .container-fluid .grandMother .block .section4 .mycol ul li img {
-              border-radius: 50%;
-              width: 40px;
-              height: 40px;
-              margin-right: 10px; }
-            body .container-fluid .grandMother .block .section4 .mycol ul li p {
-              color: #979595;
-              font-size: 10px; }
-              body .container-fluid .grandMother .block .section4 .mycol ul li p span {
-                color: #c4c0c0;
-                font-size: 10px; }
-            body .container-fluid .grandMother .block .section4 .mycol ul li .text {
-              margin: 0 !important; }
-            body .container-fluid .grandMother .block .section4 .mycol ul li p:first-child {
-              width: 80% !important; }
-          body .container-fluid .grandMother .block .section4 .mycol ul p {
-            font-size: 10px !important;
-            letter-spacing: 0; }
-          body .container-fluid .grandMother .block .section4 .mycol ul span {
-            font-size: 14px !important; }
-    body .container-fluid .grandMother .block .section5 .chart-col1 {
-      text-align: center; }
-      body .container-fluid .grandMother .block .section5 .chart-col1 img {
-        max-height: 300px;
-        max-width: 300px;
-        margin: auto !important;
-        margin-bottom: 20px !important; }
-      body .container-fluid .grandMother .block .section5 .chart-col1 table {
-        text-align: start; }
-    body .container-fluid .grandMother .block .section5 .row {
-      display: block !important; }
-      body .container-fluid .grandMother .block .section5 .row .appointments-col {
-        padding: 10px 20px !important; }
     body .container-fluid .grandMother footer {
       display: block !important; }
       body .container-fluid .grandMother footer .links {
@@ -1144,42 +898,9 @@ body {
           margin: 5px 0; }
     body .openSettingControl {
       margin-right: -100%; } }
-  @media (min-width: 660px) and (max-width: 2000px) {
-    body .section2 {
-      display: flex !important;
-      flex-wrap: nowrap; }
-      body .section2 .myCol {
-        width: 50% !important; }
-    body .section3 {
-      display: flex !important;
-      padding: 0 1.5rem !important;
-      margin: 0 !important; }
-      body .section3 .myCol {
-        width: auto !important;
-        margin-left: 0 !important;
-        margin-top: 20px !important;
-        width: 49% !important; }
-      body .section3 .myCol:last-child {
-        margin-top: 20px; } }
-  @media (min-width: 0) and (max-width: 659.9px) {
-    body .section2 {
-      display: block !important; }
-      body .section2 .myCol {
-        width: 100%;
-        margin: auto;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        margin-top: 20px; }
-    body .section3 {
-      display: block !important;
-      padding: 0 25px !important; }
-      body .section3 .myCol {
-        width: 95%;
-        margin-top: 20px;
-        margin-left: 0 !important; } }
   body .dropdown-menu {
     border: 1px solid grey !important; }
   body .notLighter {
     color: #17181a !important; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=social.css.map */

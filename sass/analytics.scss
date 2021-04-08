@@ -719,6 +719,8 @@ body{
 
             .block{
                 width: 100%;
+
+
                 .section1{
                     .col-md-6:not(:last-child){
                         padding-left: 33px;
@@ -757,7 +759,6 @@ body{
                             }
                         }
                     }
-
                     #dropdown6{
                         p{
                             padding: 6px 0;
@@ -769,493 +770,425 @@ body{
                             }
                         }
                     }
+                }
 
-                }
-                .section2,.section3{
-                    justify-content: center;
-                    width: 100%;
-                    display: block;
-                    .myCol{
-                        width: 100%;
-                    }
-                }
-                .section4{
-                    padding: 25px 35px !important;
-                    display: flex;
-                    flex-wrap: nowrap;
-                    .mycol-md-12{
-                        width: 68%;
-                        background-color: #293042;
-                        overflow-y: auto;
-                        .d-flex.py-4.justify-content-between{
-                            padding: 0;
-                            padding-top: 15px !important;
-                            padding-bottom: 15px !important;
-                        }
-                        .canvas-holder{
-                            height: 200px;
-                            canvas{
-                                width: 100% !important;
-                                height: 100%;
+
+                .section2{
+                    padding: 20px 0;
+                    .row{
+                        justify-content: center;
+                        .col-md-5{
+                            padding-right: 20px;
+                            padding-left: 45px;
+                            
+                            .col-12{
+                                background-color: #343A4B;
                             }
-                        }
-                    }
-                    .mycol{
-                        overflow-y: auto;
-                        background-color: #293042;
-                        margin-left: 25px; 
-                        width: 30%;
-                        padding-bottom: 20px !important;
-                        .col__header{
-                            margin-bottom: 20px;
-                        }
-                        ul{
-                            padding: 0;
-                            margin-bottom: 5px;
-                            li{
-                                display: flex;
-                                align-items: flex-start;
-                                padding: 10px 0;
-                                border-bottom: 1px solid rgb(87, 86, 86);
-                                img{
-                                    border-radius: 50%;
-                                    width: 40px;
-                                    height: 40px;
-                                    margin-right: 10px;
+                            .col-12:nth-child(2){
+                                height: 150px;
+                                background-color: #293042;
+                                margin: 20px 0;
+                                border-radius: 5px;
+                                display: block;
+                                padding: 20px;
+                                position: relative;
+                                p:nth-child(1){
+                                    color: #CFD1D5;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    // margin-bottom: 0;
                                 }
-                                p{
-                                    color: rgb(151, 149, 149);
-                                    font-size: 14px;
-                                    span{
-                                        color: rgb(196, 192, 192);
-                                        font-size: 15px;
+                                .icon{
+                                    height: 50px;
+                                    width: 50px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #3E4555;
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 20px;
+                                    svg{
+                                        color: #fff;
                                     }
                                 }
-                                .text{
-                                    margin: 0 !important;
+                                .text-white{
+                                    font-size: 26px;
+                                    font-weight: 600;
+                                    // margin-bottom: 0;
+                                }
+                                .d-flex{
+                                    align-items: center;
+                                    span{
+                                        border-radius: 4px;
+                                        background-color: #2F4A4A;
+                                        color: #49B670;
+                                        font-size: 12px;
+                                    }
+                                    p{
+                                        margin: 0;
+                                        margin-left: 8px;
+                                        font-weight: 600;
+                                        color: #92959E;
+                                    }
                                 }
                             }
-                            p{
-                                font-size: 90% !important;
-                                letter-spacing: 0;
-                            }
-                            span{
-                                
-                                font-size: 80% !important;
-                            }
-                        }
-                    }
-                }
-                .section5{
-                    .row{
-                        .calendar-col{
-                            background-color: #293042;
-                            min-width: 300px;
-                            margin-top: 20px;
-                            
-                            .dark {
-                                --bg-body: var(--dark-body);
-                                --bg-main: var(--dark-main);
-                                --bg-second: var(--dark-second);
-                                --color-hover: var(--dark-hover);
-                                --color-txt: var(--dark-text);
-                            }
-                            
-                            .light {
-                                --bg-body: var(--light-body);
-                                --bg-main: var(--light-main);
-                                --bg-second: var(--light-second);
-                                --color-hover: var(--light-hover);
-                                --color-txt: var(--light-text);
-                            }
-                            
-                            * {
-                                padding: 0;
-                                margin: 0;
-                                box-sizing: border-box;
-                            }
-                            
-                            html,
-                            body {
-                                height: 100vh;
-                                display: grid;
-                                place-items: center;
-                                font-family: var(--font-family);
-                                background-color: var(--bg-body);
-                            }
-                            
-                            .calendar {
-                                height: 100%;
-                                width: 100%;
-                                background-color: #293042;
-                                border-radius: 0;
-                                padding: 20px;
-                                position: relative;
-                                overflow: hidden;
-                                /* transform: scale(1.25); */
-                            }
-                            
-                            .light .calendar {
-                                box-shadow: var(--shadow);
-                            }
-                            
-                            .calendar-header {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                font-size: 25px;
-                                font-weight: 600;
-                                color: var(--color-txt);
-                                padding: 10px;
-                            }
-                            
-                            .calendar-body {
-                                padding: 10px;
-                            }
-                            
-                            .calendar-week-day {
-                                height: 50px;
-                                display: flex;
-                                justify-content: space-between;
-                                font-weight: 600;
-                            }
-                            
-                            .calendar-week-day div {
-                                color: var(--bg-second);
-                                width: 14.2857142857% !important;
-                            }
-                            
-                            .calendar-days {
-                                display: flex;
-                                justify-content: flex-start;
-                                flex-wrap: wrap;
-                                color: var(--color-txt);
-                            }
-                            
-                            .calendar-days div {
-                                width: 14%;
-                                height: 50px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                padding: 5px;
-                                position: relative;
-                                cursor: pointer;
-                                border-radius: 3px;
-                                transition: .3s;
-                            }
-
-                            .calendar-days div.active{
-                                background-color: #3F80EA !important;
-                                color: #fff !important;
-                            }
-
-                            .calendar-days div.today{
-                                position: relative;
-                                overflow: hidden;
-                                border: 1px solid #3F80EA;
-                            }
-                            
-                            .calendar-days div span {
-                                position: relative;
-                            }
-                            
-                            .calendar-days div.calendar-day-hover:hover {
-                                background-color: #545968;
-                            }
-                            
-                            .calendar-days div span:nth-child(1),
-                            .calendar-days div span:nth-child(3) {
-                                width: 2px;
-                                height: 0;
-                                background-color: var(--color-txt);
-                            }
-                            
-                            .calendar-days div:hover span:nth-child(1),
-                            .calendar-days div:hover span:nth-child(3) {
-                                height: 100%;
-                            }
-                            
-                            .calendar-days div span:nth-child(1) {
-                                bottom: 0;
-                                left: 0;
-                            }
-                            
-                            .calendar-days div span:nth-child(3) {
-                                top: 0;
-                                right: 0;
-                            }
-                            
-                            .calendar-days div span:nth-child(2),
-                            .calendar-days div span:nth-child(4) {
-                                width: 0;
-                                height: 2px;
-                                background-color: var(--color-txt);
-                            }
-                            
-                            .calendar-days div:hover span:nth-child(2),
-                            .calendar-days div:hover span:nth-child(4) {
-                                width: 100%;
-                            }
-                            
-                            .calendar-days div span:nth-child(2) {
-                                top: 0;
-                                left: 0;
-                            }
-                            
-                            .calendar-days div span:nth-child(4) {
-                                bottom: 0;
-                                right: 0;
-                            }
-                            
-                            .calendar-days div:hover span:nth-child(2) {
-                                transition-delay: 0.2s;
-                            }
-                            
-                            .calendar-days div:hover span:nth-child(3) {
-                                transition-delay: 0.4s;
-                            }
-                            
-                            .calendar-days div:hover span:nth-child(4) {
-                                transition-delay: 0.6s;
-                            }
-                            
-
-                            
-                            .calendar-days div.curr-date span {
-                                display: none;
-                            }
-                            
-                            .month-picker {
-                                padding: 5px 10px;
-                                border-radius: 3px;
-                                cursor: pointer;
-                            }
-                            
-                            .month-picker:hover {
-                                background-color: #545968;
-                            }
-                            
-                            .year-picker {
-                                display: flex;
-                                align-items: center;
-                            }
-                            
-                            .year-change {
-                                height: 40px;
-                                width: 40px;
-                                border-radius: 3px;
-                                display: grid;
-                                place-items: center;
-                                margin: 0 10px;
-                                cursor: pointer;
-                            }
-                            
-                            .year-change:hover {
-                                background-color: #545968;
-                            }
-                            
-                            .calendar-footer {
-                                padding: 10px;
-                                display: flex;
-                                justify-content: flex-end;
-                                align-items: center;
-                            }
-                            
-                            .toggle {
-                                display: flex;
-                            }
-                            
-                            .toggle span {
-                                margin-right: 10px;
-                                color: var(--color-txt);
-                            }
-                            
-                            .dark-mode-switch {
-                                position: relative;
-                                width: 48px;
-                                height: 25px;
-                                border-radius: 3px;
-                                background-color: #293042;
-                                cursor: pointer;
-                            }
-                            
-                            .dark-mode-switch-ident {
-                                width: 21px;
-                                height: 21px;
-                                border-radius: 50%;
-                                background-color: #293042;
-                                transition: left 0.2s ease-in-out;
-                            }
-                            
-                            .dark .dark-mode-switch .dark-mode-switch-ident {
-                                top: 2px;
-                                left: calc(2px + 50%);
-                            }
-                            
-                            .month-list {
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                top: 0;
-                                left: 0;
-                                background-color: #293042;
-                                padding: 20px;
-                                grid-template-columns: repeat(3, auto);
-                                gap: 5px;
-                                display: grid;
-                                transform: scale(1.5);
-                                visibility: hidden;
-                                pointer-events: none;
-                            }
-                            
-                            .month-list.show {
-                                transform: scale(1);
-                                visibility: visible;
-                                pointer-events: visible;
-                                transition: all 0.2s ease-in-out;
-                            }
-                            
-                            .month-list > div {
-                                display: flex;
-                                justify-content: space-between;
-                                flex-wrap: wrap;
-                            }
-                            
-                            .month-list > div > div {
-                                width: 100%;
-                                padding: 0;
-                                border-radius: 10px;
-                                text-align: center;
-                                cursor: pointer;
-                                color: var(--color-txt);
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            
-                            .month-list > div > div:hover {
-                                background-color: #545968;
-                            }
-                            
-                            @keyframes to-top {
-                                0% {
-                                    transform: translateY(100%);
-                                    opacity: 0;
-                                }
-                                100% {
-                                    transform: translateY(0);
-                                    opacity: 1;
-                                }
-                            }
-                            
-                        }
-                        .chart-col1{
-                            background-color: #293042;
-                            margin-top: 20px;
-                            .chart{
-                                .chart__body{
-                                    table{
-                                        tbody{
-                                            tr{
-                                                td{
-                                                    span{
-                                                        padding: 0 10px;
-                                                        max-height: 7px;
-                                                        
-                                                        margin-right: 5px;
-                                                    }
-                                                }
-                                            }
+                            .col-12.d-flex{
+                                background-color: #343A4B;
+                                .row{
+                                    width: 100%;
+                                    margin: 0;
+                                    justify-content: space-between;
+                                    
+                                    .col-6{
+                                        max-height: 100%;
+                                        margin: 0;
+                                        padding: 0;
+    
+                                        img{
+                                            // width: 100%;
+                                            height: 140px;
+                                        }
+                                    }
+                                    .col-6:nth-child(2){
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                    }
+                                    .col-6:nth-child(1){
+                                        padding: 17px 10px;
+                                        p{
+                                            color: #EAEAEC;
+                                            font-weight: 600;
+                                            font-size: 15px;
+                                        }
+                                        .text-light{
+                                            font-size: 20px;
+                                            line-height: 100%;
                                         }
                                     }
                                 }
                             }
                         }
-                        .appointments-col{
-                            background-color: #293042;
-                            margin-top: 20px;
-                            .appointments__body{
-                                position: relative;
-                                .timeline{
-                                    position: relative;
-                                    .timeline-item:before {
-                                        content: " ";
-                                        display: inline-block;
-                                        position: absolute;
-                                        z-index: 1;
-                                        margin-right: 10px;
-                                        background: #293042;
-                                        background-image: initial;
-                                        background-position-x: initial;
-                                        background-position-y: initial;
-                                        background-size: initial;
-                                        background-repeat: initial;
-                                        background-attachment: initial;
-                                        background-origin: initial;
-                                        background-clip: initial;
-                                        background-color: rgb(41, 48, 66);
-                                        border-radius: 50%;
-                                        border: 3px solid #3f80ea;
-                                        border-top-color: rgb(63, 128, 234);
-                                        border-top-style: solid;
-                                        border-top-width: 3px;
-                                        border-right-color: rgb(63, 128, 234);
-                                        border-right-style: solid;
-                                        border-right-width: 3px;
-                                        border-bottom-color: rgb(63, 128, 234);
-                                        border-bottom-style: solid;
-                                        border-bottom-width: 3px;
-                                        border-left-color: rgb(63, 128, 234);
-                                        border-left-style: solid;
-                                        border-left-width: 3px;
-                                        border-image-source: initial;
-                                        border-image-slice: initial;
-                                        border-image-width: initial;
-                                        border-image-outset: initial;
-                                        border-image-repeat: initial;
-                                        left: 0;
-                                        width: 20px;
-                                        height: 20px;
-                                    }
-                                    &:before{
-                                        content: " ";
-                                        display: inline-block;
-                                        position: absolute;
-                                        z-index: 1;
-                                        background: #696e7b;
-                                        background-image: initial;
-                                        background-position-x: initial;
-                                        background-position-y: initial;
-                                        background-size: initial;
-                                        background-repeat: initial;
-                                        background-attachment: initial;
-                                        background-origin: initial;
-                                        background-clip: initial;
-                                        background-color: rgb(105, 110, 123);
-                                        left: 9px;
-                                        width: 2px;
+
+
+                        .col-md-7{
+                            height: 330px;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            padding-right: 36px;
+                            border-radius: 6px;
+                            overflow: hidden;
+                            .row{
+                                background-color: #293042;
+                                height: 100%;
+                                width: 100%;
+
+                                .col-12{
+                                    height: 100%;
+                                    #vmap{
+                                        
+                                        background: transparent !important;
+                                        width: 100%;
                                         height: 100%;
-                                        box-sizing: border-box;    
-                                        margin-right: 10px;                                
-                                    } 
+                                        overflow: hidden !important;
+                                        svg{
+                                            height: 100%;
+                                            g{
+                                                position: relative !important;
+                                                max-width: 100%;
+                                                max-height: 100%;
+                                            }
+                                        }
+                                        .jqvmap-label
+                                        {
+                                            // position: absolute;
+                                            // display: none;
+                                            // -webkit-border-radius: 3px;
+                                            // -moz-border-radius: 3px;
+                                            border-radius: 3px;
+                                            background: #293042;
+                                            color: white;
+                                            font-family: sans-serif, Verdana;
+                                            font-size: smaller;
+                                            padding: 3px;
+                                          pointer-events:none;
+                                        }
+                                        .jqvmap-pin {
+                                          pointer-events:none;
+                                        }
+                                        .jqvmap-zoomin, .jqvmap-zoomout
+                                        {
+                                            position: absolute;
+                                            left: 10px;
+                                            -webkit-border-radius: 3px;
+                                            -moz-border-radius: 3px;
+                                            border-radius: 3px;
+                                            background: #000000;
+                                            padding: 3px;
+                                            color: white;
+                                            width: 10px;
+                                            height: 10px;
+                                            cursor: pointer;
+                                            line-height: 10px;
+                                            text-align: center;
+                                        }
+                                        .jqvmap-zoomin
+                                        {
+                                            top: 10px;
+                                            background-color: #7F838E;
+                                            padding: 10px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .jqvmap-zoomout
+                                        {
+                                            top: 40px;
+                                            background-color: #7F838E;
+                                            padding: 10px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .jqvmap-region
+                                        {
+                                          cursor: pointer;
+                                        }
+                                        .jqvmap-ajax_response
+                                        {
+                                          width: 100%;
+                                          height: 100%;
+                                        }
+        
+                                    }
                                 }
-                           
-                     
+
+                            }
+                        }
+
+                        @media (max-width: 768px){
+                            .col-md-5{
+                                padding: 0 46px;
+                            }
+                            .col-md-7{
+                                padding: 0 35px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .row{
+                                    overflow: hidden;
+                                }
                             }
                         }
 
                     }
                 }
+
+                .section3{
+                    padding: 0 20px;
+                    flex-wrap: nowrap;
+                    // padding-right: 40px;
+
+                    .col:nth-child(1){
+                        padding: 0;
+                        .card-body{
+                            padding: 0;
+                        }
+                    }
+                    .col{
+                        width: 33%;
+                        background-color: #293042;
+                        margin: 0 15px;
+
+                        .card-header{
+                            p:nth-child(1){
+                                color: #D4D6D9;
+                            }
+                        }
+
+                        .card-body{
+                            table{
+                                
+                                thead{
+                                    color: #849AAF;
+                                    tr{
+                                        border-color: #545968;
+                                        border-bottom-width: 3px;
+                                        th{
+                                            padding: 10px 10px;
+                                        }
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        border-color: #545968;
+                                        td{
+                                            text-align: center;
+                                            padding: 10px 10px;
+                                            min-width: 100%;
+                                            color: #849AAF;
+                                            .progress{
+                                                background-color: #545968;
+                                              
+                                                margin: 0 auto;
+
+                                                .progress-bar{
+                                                    color: black !important;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                    tr.strip{
+                                        background-color: #343A4B;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+                
+                .section4{
+                    margin: 20px 20px;
+                    flex-wrap: nowrap;
+                    padding-right: 30px;
+
+                    .col-sm-12{
+                        background-color: #293042;
+                        margin: 0 10px;
+                    }
+
+                    .col-md-4{
+                        .card-header{
+                            p{
+                                color: #F1F1F1;
+                            }
+                        }
+                        .card-body{
+                            table{
+                                thead{
+                                    tr{
+                                        th{
+                                            color: #A9ACB3;
+                                        }
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        td{
+                                            color: #7f8186;
+                                        }
+                                        td.text-start{
+                                            text-align: start !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .col-md-8 {
+                        padding: 0;
+                        .card-body {
+                            width: 100%;
+                            padding: 0 !important;
+                            overflow-x: auto;
+
+                            table{
+                                min-width: 700px !important;
+                                
+                                overflow-x: auto !important;
+
+                                thead{
+                                    tr{
+                                        th{
+                                            cursor: pointer;
+                                            .arrows{
+                                                width: 15px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                i{
+                                                    font-size: 13px;
+                                                    color: rgb(90, 89, 89);
+                                                }
+                                                i.notActive{
+                                                    font-size: 13px;
+                                                    color: rgb(90, 89, 89);
+                                                }
+                                                i.active{
+                                                    color: darkgrey;
+                                                }
+                                            }
+                                        }
+                                        th:first-child{
+                                            padding-left: 20px;
+                                        }
+                                    }
+                                    th.d-none-sm{
+                                        display: table-cell;
+                                    }
+                                }
+
+                                tbody{
+                                    tr{
+
+                                        td{
+                                            padding: 20px 0;
+                                            text-align: center;
+                                        }
+                                        td.text-end-sm{
+                                            text-align: center;
+                                        }
+                                    }
+                                    tr:nth-child(7){
+                                        background-color: #343A4B;
+                                    }
+                                }
+                            }
+                        }
+                        .card-footer{
+                            p{
+                                color: #A9ACB3;
+
+                            }
+                            .btn-group{
+                                border-radius: 2px;
+                                overflow: hidden;
+                                border: 1px solid #A9ACB3;
+                                button{
+                                    outline: none;
+                                    color: #A9ACB3;
+                                    background-color: transparent;
+                                    border: none;
+                                    font-size: 13px;
+                                    padding: 5px 10px;
+                                }
+                                button.active{
+                                    background-color: #3F80EA;
+                                    color: black;
+                                }
+                                button:nth-child(2){
+                                    border-left: 1px solid #A9ACB3;
+                                    border-left: 1px solid #A9ACB3;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
                 .section6{
                     background-color: #293042;
                     margin: 20px;
                     overflow: hidden;
 
-                    .tab-content{
-                        .tab-pane{
-                            overflow-y: hidden;
-                            overflow-x: auto;
+
 
                             table{
                                 min-width: 700px;
@@ -1288,11 +1221,11 @@ body{
                                     }
                                 }
                             }        
-                        }
-                    }
+                        
+                    
        
                 }
-        
+    
             }
 
             footer{
@@ -1579,106 +1512,7 @@ body{
                             }
                         }
                     }
-                    .section4{
-                        display: block !important;
-                        padding-top: 20px;
-                        div{
-                            width: 100% !important;
-                            margin: 20px 0 !important;
-                            max-height: 800px !important;
-                        }
-                        .mycol-md-12{
-                            min-height: 200px;
-                            background-color: #293042;
-                            canvas{
-                                width: 100% !important;
-                            }
-                            .d-flex{
-                                display: flex !important;
-                                justify-content: space-between;
-                                align-items: center;
-                                .dropdown{
-                                    width: 20px !important;
-                                }
-                            }
-                        }
-                        .mycol{
-                            background-color: #293042;
-                            margin-left: 25px; 
-                            width: 30%;
-                            padding: 0 30px !important;
-                            padding-bottom: 20px !important;
 
-                            // max-height: 400px;
-                            .col__header{
-                                margin-bottom: 20px;
-                            }
-                            ul{
-                                padding: 0;
-                                margin-bottom: 5px;
-                                li{
-                                    display: flex;
-                                    align-items: flex-start;
-                                    padding: 10px 0;
-                                    border-bottom: 1px solid rgb(87, 86, 86);
-                                    position: relative;
-                                    .float-end{
-                                        display: none;
-                                    }
-                   
-                                    img{
-                                        border-radius: 50%;
-                                        width: 40px;
-                                        height: 40px;
-                                        margin-right: 10px;
-                                    }
-                                    p{
-                                        color: rgb(151, 149, 149);
-                                        font-size: 10px;
-                                        span{
-                                            color: rgb(196, 192, 192);
-                                            font-size: 10px;
-                                        }
-                                    }
-                                    .text{
-                                        margin: 0 !important;
-                                    }
-                                    p:first-child{
-                                        width: 80% !important;
-                                    }
-                                }
-                                p{
-                                    font-size: 10px !important;
-                                    letter-spacing: 0;
-                                }
-                                span{
-                                    
-                                    font-size: 14px !important;
-                                }
-                            }
-                        }
-            
-                    }
-                    .section5{
-                        .chart-col1{
-                            text-align: center;
-                            img{
-                                max-height: 300px;
-                                max-width: 300px;
-                                margin: auto !important;
-                                margin-bottom: 20px !important;
-                            }
-                            table{
-                                text-align: start;
-                            }
-                        }
-                        .row{
-                            display: block !important;
-                            .appointments-col{
-                                padding: 10px 20px !important;
-                            } 
-                        }
-                    }
                 }
 
                 footer{
@@ -1703,48 +1537,78 @@ body{
     }
 
     @media (min-width: 660px) and (max-width: 2000px){
-        .section2{
-            display: flex !important;
-            flex-wrap: nowrap;
-            .myCol{
-                width: 50% !important;
-            }
-        }
-        .section3{
-                display: flex !important;
-                padding: 0 1.5rem !important;
-                margin: 0 !important;
-                
-                .myCol{
-                    width: auto !important;
-                    margin-left: 0 !important;
-                    margin-top: 20px !important;
-                    width: 49% !important;
-                }
-                .myCol:last-child{
-                    margin-top: 20px;
-                }
-        }
+
     }
 
-    @media (min-width: 0) and (max-width: 659.9px){
-        .section2{
-            display: block !important;
-            .myCol{
-                width: 100%;
-                margin: auto;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-                margin-top: 20px;
-            }
-        }
+    @media (min-width: 0) and (max-width: 759.9px){
         .section3{
             display: block !important;
-            padding: 0 25px !important;
-            .myCol{
-                width: 95%;
-                margin-top: 20px;
-                margin-left: 0 !important;
+            margin-right: 15px;
+            
+            .col{
+                width: 100% !important;
+                margin: 20px 15px !important;
+                table{
+                    tbody{
+                        tr{
+                            th{
+                                text-align: start !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 0) and (max-width: 959.9px){
+        .section4{
+            display: block !important;
+            padding-right: 0 !important;
+            
+            .col-sm-12 {
+                margin: 10px 0 !important;
+                width: 100%;
+                margin: 10px 0 !important;
+
+                .card-body {
+                    table {
+                        thead {
+                            th.d-none-sm{
+                                display: none !important;
+                            }
+               
+                            th.text-end-sm{
+                                // text-align: end !important;
+                                .d-flex{
+                                    justify-content: flex-end !important;
+                                    .arrows{
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        tbody{
+                            tr{
+                                td.d-none-sm{
+                                    display: none !important;
+                                }
+                                td{
+                                    text-align: end !important;
+                                }
+                                td.text-start-sm{
+                                    text-align: start !important;
+                                }
+                                td.text-end-sm{
+                                    text-align: end !important;
+                                    padding-right: 20px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -1754,6 +1618,11 @@ body{
     }
     .notLighter{
         color: #17181a !important;
+    }
+
+    .card-header{
+        background-color: transparent;
+        border: none;
     }
 
 }

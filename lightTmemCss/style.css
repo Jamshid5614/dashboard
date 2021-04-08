@@ -4,7 +4,7 @@
 } */
 
 :root{
-    --shadowcha: 0 0 3px 1px rgb(211, 209, 209);
+    --shadowcha: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .grandMother{
     background-color: #F7F9FC;
@@ -129,7 +129,7 @@
 .block .section1 .col-6.d-flex.justify-content-end .dropdown a{
     background-color: #fff !important;
     padding: 2px 9px;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section1 .col-6.d-flex.justify-content-end button i{
     color: #fff !important;
@@ -145,7 +145,7 @@
     background-color: #E0EAFC !important;
 }
 .block .section2 .myCol{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section2 .myCol:first-child p,span{
     color: #5D94ED !important;
@@ -165,7 +165,7 @@
 
 .block .section3 .myCol:last-child{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section3 .myCol:last-child p:first-child{
     color: #495057 !important;
@@ -181,7 +181,7 @@
 }
 .block .section3 .myCol:first-child{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section3 .myCol:first-child p:first-child{
     color: #333 !important;
@@ -198,7 +198,7 @@
 }
 .block .section4 .mycol-md-12{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section4 .mycol-md-12 p{
     color: #333 !important;
@@ -209,7 +209,7 @@
 }
 .block .section4 .mycol{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section4 .mycol .col__header p{
     color: #333 !important;
@@ -233,7 +233,7 @@ body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar
     background-color: #F1F1F1 !important;
 }
 body .container-fluid .grandMother .block .section5 .row .calendar-col{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body .controllers_for_calendar button:hover{
     background-color: #F1F1F1 !important;
@@ -248,7 +248,7 @@ body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar
     color: rgb(110, 110, 110) !important;
 }
 body .container-fluid .grandMother .block .section5 .chart-col1{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 body .container-fluid .grandMother .block .section5 .chart-col1 .chart__header .dropdown-menu li:hover{
     background-color: #F1F1F1 !important;
@@ -275,10 +275,10 @@ body .container-fluid .grandMother .block .section5 .row .appointments-col stron
     color: rgb(85, 85, 85);
 }
 body .container-fluid .grandMother .block .section5 .row .appointments-col{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section6{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
     background-color: #fff !important;
 }
 .block .section6 table thead {
@@ -333,7 +333,7 @@ footer .links a{
     background-color: transparent !important;
 }
 .pages-menu{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .grandMother__navbar .dropdown-menu li:hover{
     background-color: #F1F1F1 !important;
@@ -604,7 +604,7 @@ footer .links a{
 .block .section1 .col-6.d-flex.justify-content-end .dropdown a{
     background-color: #fff !important;
     padding: 2px 9px;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section1 .col-6.d-flex.justify-content-end button i{
     color: #fff !important;
@@ -620,7 +620,7 @@ footer .links a{
     background-color: #E0EAFC !important;
 }
 .block .section2 .myCol{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section2 .myCol:first-child p,span{
     color: #5D94ED !important;
@@ -640,7 +640,7 @@ footer .links a{
 
 .block .section3 .myCol:last-child{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section3 .myCol:last-child p:first-child{
     color: #495057 !important;
@@ -656,7 +656,7 @@ footer .links a{
 }
 .block .section3 .myCol:first-child{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section3 .myCol:first-child p:first-child{
     color: #333 !important;
@@ -673,7 +673,7 @@ footer .links a{
 }
 .block .section4 .mycol-md-12{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section4 .mycol-md-12 p{
     color: #333 !important;
@@ -684,7 +684,7 @@ footer .links a{
 }
 .block .section4 .mycol{
     background-color: #fff !important;
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section4 .mycol .col__header p{
     color: #333 !important;
@@ -708,7 +708,7 @@ body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar
     background-color: #F1F1F1 !important;
 }
 body .container-fluid .grandMother .block .section5 .row .calendar-col{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar .calendar__body .controllers_for_calendar button:hover{
     background-color: #F1F1F1 !important;
@@ -723,7 +723,7 @@ body .container-fluid .grandMother .block .section5 .row .calendar-col .calendar
     color: rgb(110, 110, 110) !important;
 }
 body .container-fluid .grandMother .block .section5 .chart-col1{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 body .container-fluid .grandMother .block .section5 .chart-col1 .chart__header .dropdown-menu li:hover{
     background-color: #F1F1F1 !important;
@@ -750,10 +750,10 @@ body .container-fluid .grandMother .block .section5 .row .appointments-col stron
     color: rgb(85, 85, 85);
 }
 body .container-fluid .grandMother .block .section5 .row .appointments-col{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .block .section6{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
     background-color: #fff !important;
 }
 .block .section6 table thead {
@@ -806,7 +806,7 @@ footer .links a{
 }
 
 .pages-menu{
-    box-shadow: var(--shadowcha);
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
 }
 .grandMother__navbar .dropdown-menu li:hover{
     background-color: #F1F1F1 !important;
@@ -1104,15 +1104,14 @@ footer{
 
 
 
+.section6{
+    box-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%) !important;
+}
 
 
-
-
-
-
-
-
-
+.section6 .section6__footer ul a {
+    border-color: darkgrey !important;
+}
 
 
 

@@ -1220,6 +1220,11 @@ body{
                                         }
                                     }
                                 }
+                                tbody{
+                                    tr{
+                                        border: none !important;
+                                    }
+                                }
                             }        
                         
                     
@@ -1512,7 +1517,6 @@ body{
                             }
                         }
                     }
-
                 }
 
                 footer{
@@ -1559,7 +1563,24 @@ body{
                 }
             }
         }
-
+        .section2{
+            .row{
+                display: block !important;
+                .col-md-7{
+                    display: none !important;
+                }
+                .col-md-5{
+                    .row{
+                        .col-12.d-flex{
+                            .row{
+                                display: flex !important;
+                                flex-wrap: nowrap !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 0) and (max-width: 959.9px){

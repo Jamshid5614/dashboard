@@ -915,7 +915,7 @@
             <div class="block w-100">
 
                 <div class="section">
-                    <div class="myCol">
+                    <div class="myCol myCol-1">
                         <div class="user-1">
                             <img src="https://appstack.bootlab.io/img/avatars/avatar-5.jpg" class="rounded-circle" alt="">
                             <div class="d-block">
@@ -1016,7 +1016,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="myCol">
+                    <div class="myCol myCol-2">
                         <div class="admin">
                             <img src="https://appstack.bootlab.io/img/avatars/avatar.jpg" class="admin-img" alt="">
                             <p class="admin-name">Chris Wood</p>
@@ -1817,6 +1817,90 @@
             showTooltip: true
             });
         });
+
+
+
+        setInterval(function () {
+            if(localStorage.getItem('theme') == 'lightTheme'){
+                document.querySelectorAll('.section .myCol-2 a.btn').forEach(item=>{
+                    item.style.cssText = "color: #fff !important;";
+                })
+            }
+        
+        })
+        
+        window.onload = function () {
+            if(localStorage.getItem('theme') == 'lightTheme'){
+
+            }
+        
+        if(localStorage.getItem('theme') == 'defaultTheme'){
+        cssFile.href = 'defaultTheme/defaultTheme.css';
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[0].children[0].classList.add('selected')
+        }    
+ 
+        document.querySelectorAll('footer').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;"
+        })
+        document.querySelectorAll('.section6 table tbody tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        document.querySelectorAll('.section6 table thead tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+    } else if (localStorage.getItem('theme') == 'coloredTheme') {
+        cssFile.href = "coloredTheme/coloredTheme.css";
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[1].children[0].classList.add('selected')
+        }
+
+        document.querySelectorAll('footer').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;"
+        })
+        document.querySelectorAll('.section6 table tbody tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        document.querySelectorAll('.section6 table thead tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+    } else if (localStorage.getItem('theme') == 'darkTheme') {
+        cssFile.href = "";
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[2].children[0].classList.add('selected')
+        }
+    } else {
+        cssFile.href = "lightTmemCss/style.css";
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+
+        //
+        document.querySelectorAll('footer').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;"
+        })
+        document.querySelectorAll('.section6 table tbody tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        document.querySelectorAll('.section6 table thead tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        //
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[3].children[0].classList.add('selected')
+        }
+    }
+}
+    
     </script>
 
     <script src="javascript/script.js"></script>

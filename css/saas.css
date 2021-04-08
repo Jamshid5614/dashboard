@@ -577,7 +577,7 @@ body {
             position: relative; }
             body .container-fluid .grandMother .block .section2 .row:last-child .col-sm-12:last-child .row .col {
               margin: 0;
-              background-color: #343A4B !important; }
+              background-color: #343A4B; }
               body .container-fluid .grandMother .block .section2 .row:last-child .col-sm-12:last-child .row .col p {
                 color: #EAEAEC; }
               body .container-fluid .grandMother .block .section2 .row:last-child .col-sm-12:last-child .row .col p:first-child {

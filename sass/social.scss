@@ -781,6 +781,14 @@ body{
                                         width: 49%;
                                     }
 
+                                    @media (max-width: 768px){
+                                        img{
+                                            width: 50%;
+                                            max-height: 200px;
+                                            height: 100px;
+                                        }
+                                    }
+
                                 }
                                 div.span{
                                     color: #A9ACB3;

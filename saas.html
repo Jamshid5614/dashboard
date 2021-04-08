@@ -1982,7 +1982,161 @@
         //     "selectedColor": "#CC0000"
         //     }
         // });
-    
+
+
+        setInterval(function () {
+            if(localStorage.getItem('theme') == 'lightTheme'){
+                document.querySelectorAll('.section2 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .row .col').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon svg').forEach(item=>{
+                    item.style.cssText = "color: #3D7CE2 !important;"
+                })
+                document.querySelectorAll('.section3 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+            }
+            if(localStorage.getItem('theme') == 'lightTheme'){
+                document.querySelectorAll('.section2 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #E0EAFC !important;";
+                    document.querySelectorAll('.section2 .icon svg').forEach(item=>{
+                        item.style.cssText = "color: #3F80EA !important;";
+                    })
+                })
+            } else if (localStorage.getItem('theme') == 'darkTheme'){
+                document.querySelectorAll('.section2 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #3E4555 !important;";
+                    document.querySelectorAll('.section2 .icon svg').forEach(item=>{
+                        item.style.cssText = "color: #fff !important;";
+                    })
+                })
+            } else {
+                document.querySelectorAll('.section2 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #E0EAFC !important;";
+                    document.querySelectorAll('.section2 .icon svg').forEach(item=>{
+                        item.style.cssText = "color: #3F80EA !important;";
+                    })
+                })
+            }
+        })
+        window.onload = function () {
+            if(localStorage.getItem('theme') == 'lightTheme'){
+
+            }
+        }
+        if(localStorage.getItem('theme') == 'defaultTheme'){
+        cssFile.href = 'defaultTheme/defaultTheme.css';
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[0].children[0].classList.add('selected')
+        }    
+        document.querySelectorAll('.section2 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .row .col').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon svg').forEach(item=>{
+                    item.style.cssText = "color: #3D7CE2 !important;"
+                })
+                document.querySelectorAll('.section3 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })    
+        document.querySelectorAll('footer').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;"
+        })
+        document.querySelectorAll('.section6 table tbody tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        document.querySelectorAll('.section6 table thead tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+    } else if (localStorage.getItem('theme') == 'coloredTheme') {
+        cssFile.href = "coloredTheme/coloredTheme.css";
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[1].children[0].classList.add('selected')
+        }
+        document.querySelectorAll('.section2 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .row .col').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon svg').forEach(item=>{
+                    item.style.cssText = "color: #3D7CE2 !important;"
+                })
+                document.querySelectorAll('.section3 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+        document.querySelectorAll('footer').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;"
+        })
+        document.querySelectorAll('.section6 table tbody tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        document.querySelectorAll('.section6 table thead tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+    } else if (localStorage.getItem('theme') == 'darkTheme') {
+        cssFile.href = "";
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[2].children[0].classList.add('selected')
+        }
+    } else {
+        cssFile.href = "lightTmemCss/style.css";
+        document.querySelectorAll('.theme-setting .d-flex.flex-wrap button').forEach(item=>{
+            item.classList.remove('selected');
+        })
+        document.querySelectorAll('.section2 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .row .col').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;";
+                })
+                document.querySelectorAll('.section2 .col-sm-12 .icon svg').forEach(item=>{
+                    item.style.cssText = "color: #3D7CE2 !important;"
+                })
+                document.querySelectorAll('.section3 .col-sm-12').forEach(item=>{
+                    item.style.cssText = "background-color: #fff !important;"
+                })
+        //
+        document.querySelectorAll('footer').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;"
+        })
+        document.querySelectorAll('.section6 table tbody tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        document.querySelectorAll('.section6 table thead tr').forEach(item=>{
+            item.style.cssText = "border-color: darkgrey !important;";
+        })
+        //
+        for(let i=0;i<document.querySelector('.theme-setting .d-flex.flex-wrap').children.length;i++){
+            document.querySelector('.theme-setting .d-flex.flex-wrap').children[3].children[0].classList.add('selected')
+        }
+    }
     </script>
 
     <!-- maps -->

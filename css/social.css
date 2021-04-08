@@ -533,6 +533,11 @@ body {
                   justify-content: space-between; }
                   body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .images img {
                     width: 49%; }
+                  @media (max-width: 768px) {
+                    body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block .images img {
+                      width: 50%;
+                      max-height: 200px;
+                      height: 100px; } }
                 body .container-fluid .grandMother .block .section .myCol:first-child .user-1 .d-block div.span {
                   color: #A9ACB3;
                   font-size: 13px;
